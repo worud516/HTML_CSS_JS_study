@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css./academy_review_0322_2.css">
+</head>
+<body>
+    <h1>웹 1 6일차</h1>
+    <h3>마우스 오버 속성 - 마우스를 올렸을때 css 변경되는것.</h3>
+    <p>사용방법 : css 에서 클래스 명뒤에 :hover 라고 입력</p>
+    <p>ex) .box:hover {width: 300px;} </p>
+    <p>예시</p>
+    <div class="box">200*200 박스 입니다.</div>
+
+    <hr>
+    <h3>transition 속성 - css 가 변경될때 자연스러운 애니메이션 구현</h3>
+    <p>사용방법 : transition : 1s ; 변경되는 시간 설정 </p>
+    <p>ex) .box {transition : 1s ;} </p>
+    <p>예시</p>
+    <div class="box2">200*200 박스 입니다.</div>
+
+    <hr>
+
+    <h3>font 관련 속성</h3>
+    <p> font-size: 24px ; </p>
+    <p> font-weight: bolder ; </p>
+    <p> 폰트웨이트는 기본 = normal, 100~900, bold, bolder</p>
+    <p> font-family: 'Nanum Pen Script', cursive; </p>
+    <p> 구글 폰트 에서 선택후 링크 걸고 변경 </p>
+    <p> text-shadow: 10px 10px 10px black ; </p>
+
+    <hr>
+
+    <h3>float 속성</h3>
+    <a href="https://codepen.io/young-yoi/pen/bGpxpex">참고 사이트</a>
+
+    <p>float : left ; (요소들을 왼쪽으로 정리한다)</p>
+    <p>float : right ; (요소들을 오른쪽으로 정리한다)</p>
+
+    <p>float 속성을 준 부모 태그에는 무조건 아래의 속성을 주어 레이아웃이 틀어지지 않도록 한다.</p>
+    <p><ins>기본적으로 row 라는 클래스를 만들어 넣어줌</ins></p>
+    <p>.row::after{</p>
+    <p> clear:both;</p>
+    <p> display:block;</p>
+    <p> content:"";</p>
+    <p>}</p>
+
+    <hr>
+
+    <h3>display 속성</h3>
+    <a href="https://codepen.io/young-yoi/pen/poyOyem">참고 사이트</a>
+
+    <p><b>display : block ;</b>  </p>
+    <p>display 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 <mark>혼자 한 줄을 차지합니다.</mark> </p>
+    <p>기본 요소가 block 인 엘리먼트들 : h1~6, p , div , ul ,li </p>
+    <p><b>display : inline ;</b> </p>
+    <p>display 속성이 inline으로 지정된 엘리먼트는 전후 줄바꿈 없이 <mark> 한 줄에 다른 엘리먼트들과 나란히 배치됩니다.</mark> </p>
+
+    <p>※ inline 엘리먼트를 사용할 때 주의할 점은, width와 height 속성을 지정해도 무시된다는 것입니다. 왜냐하면 해당 태그가 마크업하고 있는 컨텐트의 크기 만큼만 공간을 차지하도록 되어 있기 때문입니다. 또한, margin과 padding 속성은 좌우 간격만 반영이 되고, 상하 간격은 반영이 되지 않습니다. </p>
+
+    <p>기본 요소가 inline 인 엘리먼트들 : a , span , img </p>
+
+    <h1 style='background :red;'> 저는 block 입니다.</h1>
+    <h1 style='background :red; display:inline;'> 저는 inline 입니다.</h1>
+
+
+    <p><b>display : none ;</b> </p>
+    <p>안보이게 하는 태그입니다.</p>
+
+    <hr>
+    
+</body>
+</html>

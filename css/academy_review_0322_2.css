@@ -1,0 +1,25 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: white;
+    line-height: 200px;
+    text-align:center;
+  }
+  .box:hover {
+    width: 300px;
+  }
+  
+  .box2 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: white;
+    line-height: 200px;
+    text-align:center;
+    transition:1s;
+  }
+  .box2:hover {
+    width: 300px;
+  }
+  
