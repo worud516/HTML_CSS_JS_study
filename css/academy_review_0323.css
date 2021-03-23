@@ -1,0 +1,96 @@
+/* 노멀라이징 */
+*{
+    margin: 0 ;
+    padding : 0 ;
+  }
+  
+  ul,li{
+    list-style : none;
+  }
+  
+  a{
+    color: inherit ;
+  }
+  
+  /* 라이브러리 */
+  .cell{
+    float : left ;
+  }
+  
+  .row::after{
+    clear:both;
+    display:block;
+    content:"";
+  }
+  
+  /* 스타일 */
+  .wrap1{
+    width: 1200px;
+    height : 200px;
+    margin: 0 auto;
+  }
+  
+  .red_box{
+    width : 800px ;
+    height : 200px ;
+    background-color : red;
+  }
+  
+  .blue_box{
+    width : 400px;
+    height : 200px;
+    background-color : blue;
+  }
+  
+  .wrap2{
+    width: 1200px;
+    height : 200px;
+    margin: 0 auto;
+  }
+  
+  .gray-box{
+    width : 400px ;
+    height : 200px ;
+    background-color : gray ;
+    border : 10px solid white;
+    box-sizing : border-box ;
+  }
+  
+  .wrap3{
+    width: 1200px;
+    height : 200px;
+    background-color : #aaa ;
+    margin: 0 auto;
+  }
+  
+  .green_box{
+    /* 전체 크기 - 여유 / 박스개수 */
+    /*  (1200 - 10) / 4 */
+    width : 292.5px ;
+    height : 200px ;
+    background-color : green ;
+    margin-right: 10px;
+  }
+  
+  .green_box.last{
+    margin-right: 0 ;
+  }
+  
+  .wrap4{
+    width: 1200px;
+    height : 200px;
+    background-color : red ;
+    margin: 0 auto;
+    margin-top: 10px ;
+  }
+  
+  .pink_box{
+    width : 232px ;
+    height : 200px ;
+    background-color : pink ;
+    margin-right : 10px;
+  }
+  
+  .pink_box.last{
+    margin-right: 0 ;
+  }
