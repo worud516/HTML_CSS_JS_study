@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;  
+  }
+  
+  ul,li{
+    list-style:none;
+  }
+  
+  a{
+    color:inherit;
+    text-decoration:none;
+  }
+  
+  input ,textarea{
+    outline:none;
+  }
+  
+  input:focus{
+    border:2px solid purple;
+  }
+  textarea:focus{
+    border:2px solid purple;
+  }
+  
+  .form-box{
+    width:600px;
+  }
+  .email-box{  
+    width: 100% ;
+    height:50px;
+    padding:10px;
+    box-sizing:border-box;
+    margin-bottom: 10px;
+  }
+  .name-box{
+    width:49%;
+    height:50px;
+    padding:10px;
+    box-sizing:border-box;
+    margin-bottom: 10px;
+  }
+  .company-box{
+    width:50%;
+    height:50px;
+    padding:10px;
+    box-sizing:border-box;  
+    margin-bottom: 10px;
+  }
+  .phone-box{
+    width:49%;
+    height:50px;
+    padding:10px;
+    box-sizing:border-box;  
+    margin-bottom: 10px;
+  }
+  .pass-box{
+    width:50%;
+    height:50px;
+    padding:10px;
+    box-sizing:border-box;  
+    margin-bottom: 10px;
+  }
+  .title-box{
+    width:100%;
+    height:50px;
+    padding:10px;
+    box-sizing:border-box;  
+    margin-bottom: 10px;
+  }
+  .content-box{
+    width:100%;
+    height: 200px ;
+    box-sizing:border-box;  
+    resize:none;
+    padding:10px;  
+  }
+  .agree-box{
+    width:20px;
+    height:20px;
+  }
+  
+  .submit{
+    width:100%;
+    height:50px;
+    border: 2px solid purple ;
+  }
+  
+  .submit:hover{
+    background-color:purple;
+    color:white;
+  }
