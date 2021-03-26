@@ -1,0 +1,18 @@
+.wrap{
+    text-align:center;
+  }
+  
+  .wrap1 > img + p{
+    color:red;
+  }
+  
+  .wrap2 > img ~ p{
+    color:red;
+  }
+  
+  .wrap1 > img{
+    
+  }
+  .wrap1 img{
+    
+  }
