@@ -1,0 +1,54 @@
+.spacer{
+    height: 500px ;
+  }
+  
+  .box{
+    width: 500px ;
+    height: 300px ;
+    margin: 0 auto;
+    background-color: #ddd ;
+    background-image: url(https://blog.kakaocdn.net/dn/bcRWUq/btqD8Pgx4ZQ/KLBWzPrikoovzHCiYHkoak/img.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size:contain;*/
+    background-size: cover;
+  }
+  
+  .box2{
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ddd ;
+    background-image: url(https://t1.daumcdn.net/cfile/blog/26599D42577AF63136) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size:contain;*/
+    background-size: cover;
+  }
+  
+  .box3{
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    margin: 0 auto;
+    background-image: url(https://blog.kakaocdn.net/dn/wfZFr/btqEXKqT9iQ/lbPiqk9wUt5OZ6w4Gkg23K/img.jpg) ;
+    background-repeat: no-repeat;
+    background-position: top;
+    /*background-size:contain;*/
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .box4{
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    margin: 0 auto;
+    background-image: url(https://i.pinimg.com/736x/73/ea/a0/73eaa0281207bcba22e74686870e7a47.jpg) ;
+    background-repeat: no-repeat;
+    background-position: top;
+    /*background-size:contain;*/
+    background-size: cover;
+    background-attachment: fixed;
+  }

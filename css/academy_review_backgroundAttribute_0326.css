@@ -1,0 +1,26 @@
+.wrap{
+    margin: 0 auto;
+    width:900px;
+    height:500px;
+    background-color: red ;
+    background-image: url(https://t1.daumcdn.net/cfile/blog/26599D42577AF63136) ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    background-position: center ;
+  }
+  
+  .spacer{
+    height:500px;
+  }
+  
+  .wrap2{
+    margin: 0 auto;
+    width:900px;
+    height:500px;
+    background-color: red ;
+    background-image: url(https://t1.daumcdn.net/cfile/blog/2471034656F089C706) ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    background-position: center ;
+    background-attachment: fixed ;
+  }
