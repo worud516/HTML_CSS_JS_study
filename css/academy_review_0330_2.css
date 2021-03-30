@@ -1,0 +1,52 @@
+/* 노멀라이징 */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  ul, li{
+    list-style: none;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  /* 라이브러리 */
+  .cell{
+    float: left;
+  }
+  .row::after{
+    dispaly: block;
+    content: "";
+    clear: both;
+  }
+  .con{
+    width: 900px;
+    margin : 0 auto;
+  }
+  
+  /* 스타일 */
+  .box-wrap{
+    width: 800px;
+    height: 400px;
+    background-color: red;
+    margin: 0 auto;
+    background-image: url(https://t1.daumcdn.net/cfile/blog/26599D42577AF63136);
+    background-size: cover;
+    background-position : center;
+    background-repeat: no-repeat;
+  }
+  
+  .box-wrap > .box{
+    width: 20%;
+    height: 50%;
+    background-color: red;
+    border: 5px solid black;
+    box-sizing: border-box;
+    opacity: 0.5 ;
+  }
+  .box-wrap > .box:nth-child(2n){
+    background-color: blue;
+  }
+  .box-wrap > .box:nth-child(2n-1){
+    background-color: green;
+  }
