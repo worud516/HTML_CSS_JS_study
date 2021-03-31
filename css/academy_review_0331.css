@@ -1,0 +1,89 @@
+.wrap{
+    width:800px ;
+    height: 800px ;
+    background-color:#ddd;
+    margin: 0 auto ;
+    border: 10px solid black ;
+    position: relative;
+  }
+  
+  .box{
+    width: 100px ;
+    height: 100px ;
+    position: absolute;
+    text-align: center;
+    line-height: 95px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  .box1{
+    background-color: red ;
+    top: 0;
+    left: 0;
+    z-index: 101 ;
+  }
+  .box2{
+    background-color: blue ;
+    top: 20px;
+    left: 20px;
+    z-index: 301 ;
+  }
+  .box3{
+    background-color: gray ;
+    top: 40px;
+    left: 40px;
+    z-index: 201 ;
+  }
+  .box4{
+    background-color: yellowgreen ;
+    top: 0;
+    right: 0;
+  }
+  .box5{
+    background-color: yellow ;
+    bottom: 0;
+    right: 0;
+  }
+  .box6{
+    background-color: orange ;
+    bottom: 0;
+    left: 0;
+  }
+  .box7{
+    background-color: salmon ;
+    top: 50%;
+    left: 50%;
+    z-index: 301 ;
+  }
+  .box8{
+    background-color: green ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 201 ;
+  }
+  .box9{
+    background-color: skyblue ;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .box10{
+    background-color: skyblue ;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .box11{
+    background-color: skyblue ;
+    top: 50%;
+    left: 0;
+    transform: translate(0 ,-50%);
+  }
+  .box12{
+    background-color: skyblue ;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
