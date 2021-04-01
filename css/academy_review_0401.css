@@ -1,0 +1,153 @@
+/* 노멀라이징 */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  ul, li{
+    list-style:none;
+  }
+  
+  /* 라이브러리 */
+  .cell{
+    float: left;
+  }
+  
+  .row::after{
+    display: block;
+    content: "";
+    clear: both;
+  }
+  
+  .con{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* 스타일 */
+  .logo-wrap{
+    height: 100px;
+    background-color: red;
+  }
+  .logo-wrap > .logo-box{
+    width: 300px;
+    height: 100%;
+    background-color: gray;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+  }
+  
+  .menu-wrap{
+    height: 75px;
+    background-color: orange;
+  }
+  
+  .menu-wrap > .menu-list{
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .menu-wrap > .menu-list > ul > li{
+    width: calc((100% - 60px) / 4);
+    height: 75px;
+    background-color: green;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .menu-wrap > .menu-list > ul > li:last-child{
+    margin-right : 0;
+  }
+  
+  .menu-wrap > .menu-list > ul > li > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .main-visual{
+    width: 100%;
+    height: 500px;
+    background-color: #ddd;
+    margin-top: 20px;
+    background-image: url(https://blog.kakaocdn.net/dn/bcRWUq/btqD8Pgx4ZQ/KLBWzPrikoovzHCiYHkoak/img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .section01{
+    height: 250px;
+    margin-top: 20px;
+  }
+  .section01 > .section01-content{
+    width: calc((100% - 30px) / 3);
+    height: 250px;
+    background-color: #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right:15px;
+  }
+  .section01 > .section01-content:last-child{
+    margin-right: 0px;
+  }
+  .section01 > .section01-content > h3{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .section02{
+    width : 100%;
+    height: 500px;
+    background-color: #aaa;
+    margin-top: 20px;
+    background-image: url(https://i.pinimg.com/564x/20/47/1f/20471ffc31358d1c0ff08b89ab4a300b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+  }
+  .section02 > .text-box{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .section02 > .text-box > h3{
+    border-bottom: 1px solid black; 
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer{
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    margin-top: 20px;
+    position:relative;
+  }
+  .footer > h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
