@@ -1,0 +1,57 @@
+*{
+    padding:0;
+    margin:0;
+  }
+  .box-wrap{
+    margin: 0 auto;
+    width: 500px ;
+    padding:10px;
+    background-color:red;
+  }
+  
+  .change-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border: 10px solid black;
+    position: relative;
+    margin-bottom: 10px ;
+    left:0;
+  }
+  .change-box:hover{
+    background-color:white;
+  }
+  .box-wrap:hover > .change-box{
+    left:360px;
+    background-color:purple;
+  }
+  .change-box p {
+    width: 100%;
+    padding-top:10px;
+  }
+  
+  .txt-box{
+    margin-top: 20px ;
+    text-align:center;
+  }
+  
+  .change-box1{
+    transition: 1s 1s left ease  ;
+  }
+  
+  .change-box2{
+    transition-delay: 0.5s ;
+    transition-duration: 1s ;
+    transition-timing-function: ease-in-out ;
+  }
+  
+  .change-box3{
+    transition-property: transform  background-color ;
+    transition-duration:1s;
+    transition-timing-function: linear;
+  }
+  
+  .change-box4{
+    transition-duration:1s;
+    transition-timing-function: ease-in-out ;
+  }
