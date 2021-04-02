@@ -1,0 +1,134 @@
+/* 노멀라이징 */
+*{
+    padding: 0;
+    margin: 0 ;
+  }
+  ul,li{
+    list-style: none ;
+  }
+  a{
+    color: inherit;
+    text-decoration: none ;
+  }
+  
+  /* 라이브러리 */
+  .cell{
+    float: left;
+  }
+  .cell2{
+    float: right;
+  }
+  .row::after{
+    display: block;
+    content: "" ;
+    clear: both;
+  }
+  
+  /* 스타일 */
+  .product-wrap{
+    width: 1200px;
+    height: auto;
+    background-color: red;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  .product-wrap > .product-box{
+    width: calc( (100% - 30px) / 4);
+    height: 450px;
+    background-color: black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .product-wrap > .product-box.remove{
+    margin-bottom:0;
+  }
+  .product-wrap > .product-box:nth-child(4n){
+    margin-right: 0;
+  }
+  
+  
+  
+  .product-wrap > .product-box > .img-box{
+    padding: 10px;
+  }
+  
+  .product-wrap > .product-box > .img-box > img{
+    width: 100%;
+    display: block;
+  }
+  
+  .product-wrap > .product-box > .txt-box{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .logo-wrap{
+    width: 1200px;
+    height: 100px;
+    background-color: red;
+    margin: 0 auto;
+  }
+  
+  .logo-wrap > .logobox{
+    width: 300px;
+    height: 100px;
+    background-color: purple;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    color: white;
+  }
+  .logo-wrap > .menubox{
+    width: 125px;
+    height: 100px;
+    background-color: purple;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+  }
+  .logo-wrap > .menubox:hover{
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .main-visual{
+    width: 100%;
+    height: 700px;
+    background-image: url(https://www.inkdthreads.com/media/wysiwyg/wide-slider/shirt_rack.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+  
+  }
+  .main-visual > .mainlorem{
+    width: 270px;
+    height: 200px;
+    background-color: #aaa;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black ;
+  }
+  
+  
+  .exbox{
+    width: 500px;
+    background-color: white;
+    border: 1px solid black ;
+    text-align: center;
+    margin-right: 134px;
+  }
+  
+  .footer{
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    margin-top: 20px;
+  }

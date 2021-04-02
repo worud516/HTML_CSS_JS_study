@@ -38,3 +38,46 @@
     overflow:auto;
     /* (조건부) 크기를 넘어가면 좌우 스크롤바 생성*/
   }
+
+  .row::after{
+    clear:both;
+    display:block;
+    content:"";
+  }
+  .cell{
+    float:left;
+  }
+  
+  .img-list{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 200px;
+    overflow: hidden;
+  }
+  
+  .img-wrap{
+    width: 1000px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    left: 0%;
+    transition: 1s;
+  }
+  
+  .img-list:hover > .img-wrap{
+    left: -100%;
+  }
+  
+  
+  .img-wrap > .img-box{
+    width: 50%;
+  }
+  
+  
+  .img-box > img{
+    width: 100%;
+    display: block;
+  }
+  
+  
