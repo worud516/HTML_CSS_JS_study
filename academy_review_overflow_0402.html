@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css./academy_review_overflow_0402.css">
+</head>
+<body>
+    <h3> overflow 속성</h3>
+    <p>
+    overflow:visible; ----
+    <b>기본속성 내부 요소의 크기가 커도 보이게 만들어라</b>
+    1 번 박스
+    </p>
+    <p>
+    overflow:hidden; ----
+    <b>엘리먼트의 크기를 넘어갈 경우에는 안보이게 만들어라 </b>
+    2 번 박스
+    </p>
+    <p>
+    overflow:scroll; ----
+    <b>(무조건) 좌우 스크롤바 생성</b>
+    3 번 박스
+    </p>
+    <p>
+    overflow:auto; ----
+    <b>(조건부) 크기를 넘어가면 좌우 스크롤바 생성</b>
+    4 번 박스
+    </p>
+    <div class="wrap">
+    <div class="hidden-wrap visible">
+        <h4> 300 * 300 안쪽 여백 20px 박스 </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores praesentium, illum harum quas dolores quod natus labore sed excepturi necessitatibus libero deserunt autem ratione minus iste perferendis nobis rem!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, ea a! Doloribus eum quod temporibus veritatis incidunt iusto. Alias recusandae consequuntur nemo. Aspernatur odio repellat impedit eos aperiam fuga obcaecati!</p>
+    </div>
+    <div class="hidden-wrap hidden">
+        <h4> 300 * 300 안쪽 여백 20px 박스 </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores praesentium, illum harum quas dolores quod natus labore sed excepturi necessitatibus libero deserunt autem ratione minus iste perferendis nobis rem!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, ea a! Doloribus eum quod temporibus veritatis incidunt iusto. Alias recusandae consequuntur nemo. Aspernatur odio repellat impedit eos aperiam fuga obcaecati!</p>
+    </div>
+    <div class="hidden-wrap scroll">
+        <h4> 300 * 300 안쪽 여백 20px 박스 </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores praesentium, illum harum quas dolores quod natus labore sed excepturi necessitatibus libero deserunt autem ratione minus iste perferendis nobis rem!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, ea a! Doloribus eum quod temporibus veritatis incidunt iusto. Alias recusandae consequuntur nemo. Aspernatur odio repellat impedit eos aperiam fuga obcaecati!</p>
+    </div>
+    <div class="hidden-wrap auto">
+        <h4> 300 * 300 안쪽 여백 20px 박스 </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores praesentium, illum harum quas dolores quod natus labore sed excepturi necessitatibus libero deserunt autem ratione minus iste perferendis nobis rem!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, ea a! Doloribus eum quod temporibus veritatis incidunt iusto. Alias recusandae consequuntur nemo. Aspernatur odio repellat impedit eos aperiam fuga obcaecati!</p>
+    </div>
+    </div>
+
+    <div class="wrap">
+    <div class="hidden-wrap visible">
+        <h4> 300 * 300 안쪽 여백 20px 박스 </h4>
+        <img src="https://t1.daumcdn.net/cfile/blog/26599D42577AF63136" alt="">
+    </div>
+    <div class="hidden-wrap hidden">
+        <h4> 300 * 300 안쪽 여백 20px 박스 </h4>
+        
+        <img src="https://t1.daumcdn.net/cfile/blog/26599D42577AF63136" alt="">
+    </div>
+    <div class="hidden-wrap scroll">
+        <h4> 300 * 300 안쪽 여백 20px 박스 </h4>
+        
+        <img src="https://t1.daumcdn.net/cfile/blog/26599D42577AF63136" alt="">
+    </div>
+    <div class="hidden-wrap auto">
+        <h4> 300 * 300 안쪽 여백 20px 박스 </h4>
+        <img src="https://t1.daumcdn.net/cfile/blog/26599D42577AF63136" alt="">
+    </div>
+    </div>
+
+
+
+</body>
+</html>
