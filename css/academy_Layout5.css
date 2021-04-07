@@ -1,126 +1,287 @@
 /* 노멀라이징 시작 */
 *{
-    padding: 0;
-    margin: 0;
-  }
-  ul , li{
-    list-style: none;
-  }
-  a{
-    color: inherit;
-    text-decoration: none;
-  }
-  /* 노멀라이징 끝 */
-  
-  /* 라이브러리 시작 */
-  .cell{
-    float: left;
-  }
-  .cell2{
-    float: right;
-  }
-  .row::after{
-    display: block;
-    content: "";
-    clear: both;
-  }
-  .con{
-    width: 1300px;
-    margin: 0 auto;
-  }
-  /* 라이브러리 끝 */
-  
-  /* 스타일 시작 */
-  .header{
-    height: 120px;
-    background-color: red;
-  }
-  .header > .logo-box{
-    width: 150px;
-    height: 120px;
-    background-color: purple;
-  }
-  .header > .menu-box{
-    width: 500px;
-    height: 120px;
-    background-color: purple;
-  }
-  
-  .main-visual{
-    height: 600px;
-    background-color: gray;
-    background-image: url(https://cdn.aitimes.kr/news/photo/202003/15674_16978_055.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .section-wrap{
-    height: 2250px;
-    background-color: #ddd;
-  }
-  .section-wrap > .section-left{
-    width: 870px;
-    height: 100%;
-    background-color: red;
-    padding-right: 40px;
-    box-sizing: border-box;
-  }
-  .section-wrap > .section-left > .title-box{
-    width: 100%;
-    height: 30px;
-    background-color: #aaa;
-    margin-top: 50px;
-  }
-  .section-wrap > .section-left > .title-box > h3{
-    line-height: 30px;
-  }
-  .section-wrap > .section-left > .title-box > p{
-    width: 90px;
-    height: 30px;
-    background-color: white;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    border-radius: 10px
-  }
-  
-  .section-wrap > .section-left > .content-box{
-    width: 100%;
-    height: 300px;
-    background-color: pink;
-    margin-top: 25px;
-  }
-  
-  .section-wrap > .section-left > .content-box > .img-box{
-    width: 530px;
-    height: 100%;
-    background-color: #486;
-  }
-  .section-wrap > .section-left > .content-box > .txt-box{
-    width: 280px;
-    height: 100%;
-    background-color: #759;
-  }
-  .section-wrap > .section-left > .content-box > .txt-box > .type{
-    width: 80px;
-    height: 25px;
-    background-color: #dae6f4;
-    text-align: center;
-    line-height: 25px;
-    color: #357fc8;
-  }
-  .section-wrap > .section-left > .content-box > .txt-box > .txt-title{
-    width: 100%;
-    height: 230px;
-    background-color: #aaa;
-  }
-  
-  .section-wrap > .section-right{
-    width: 430px;
-    height: 100%;
-    background-color: blue;
-  }
-  
-  /* 스타일 끝 */
+  padding: 0;
+  margin: 0;
+}
+ul , li{
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+/* 노멀라이징 끝 */
+
+/* 라이브러리 시작 */
+.cell{
+  float: left;
+}
+.cell2{
+  float: right;
+}
+.row::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.con{
+  width: 1300px;
+  margin: 0 auto;
+}
+/* 라이브러리 끝 */
+
+/* 스타일 시작 */
+.header{
+  height: 120px;
+  background-color: red;
+}
+.header > .logo-box{
+  width: 150px;
+  height: 120px;
+  background-color: purple;
+}
+.header > .menu-box{
+  width: 500px;
+  height: 120px;
+  background-color: purple;
+}
+
+.main-visual{
+  height: 600px;
+  background-color: gray;
+  background-image: url(https://cdn.aitimes.kr/news/photo/202003/15674_16978_055.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-wrap{
+  height: 2250px;
+  background-color: #ddd;
+}
+.section-wrap > .section-left{
+  width: 870px;
+  height: 100%;
+  background-color: red;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.section-wrap > .section-left > .title-box{
+  width: 100%;
+  height: 30px;
+  background-color: #aaa;
+  margin-top: 50px;
+}
+.section-wrap > .section-left > .title-box > h3{
+  line-height: 30px;
+}
+.section-wrap > .section-left > .title-box > p{
+  width: 90px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 10px
+}
+
+.section-wrap > .section-left > .content-box{
+  width: 100%;
+  height: 300px;
+  background-color: pink;
+  margin-top: 25px;
+}
+
+.section-wrap > .section-left > .content-box > .img-box{
+  width: 530px;
+  height: 100%;
+  background-color: #486;
+  background-image: url(https://img.kr.news.samsung.com/kr/wp-content/uploads/2019/09/0902-pr-bespoke-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 1s;
+}
+.section-wrap > .section-left > .content-box > .img-box:hover{
+  background-size: 120%;
+}
+
+.section-wrap > .section-left > .content-box > .txt-box{
+  width: 280px;
+  height: 100%;
+  background-color: #759;
+}
+.section-wrap > .section-left > .content-box > .txt-box > .type{
+  width: 80px;
+  height: 25px;
+  background-color: #dae6f4;
+  text-align: center;
+  line-height: 25px;
+  color: #357fc8;
+}
+.section-wrap > .section-left > .content-box > .txt-box > .txt-title{
+  width: 100%;
+  height: 230px;
+  background-color: #aaa;
+  margin-top: 10px;
+}
+.section-wrap > .section-left > .content-box > .txt-box > .date{
+  width: 100%;
+  height: 35px;
+  background-color: #ddd;
+  line-height: 34px;
+  border-bottom: 1px solid black;
+}
+.section-wrap > .section-left > .more-btn{
+  width: 300px;
+  height: 70px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+.section-wrap > .section-left > .more-btn > p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-wrap > .section-right{
+  width: 430px;
+  height: 100%;
+  background-color: #ddd;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.section-wrap > .section-right > .media-box{
+  width: 100%;
+  height: 350px;
+  background-color: #aaa;
+  margin-top: 50px;
+}
+.section-wrap > .section-right > .media-box > .title{
+  width: 100%;
+  height: 30px;
+  background-color: pink;
+}
+.section-wrap > .section-right > .media-box > .title > h3{
+  line-height: 30px;
+}
+.section-wrap > .section-right > .media-box > .title > p{
+  width: 90px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 10px
+}
+.section-wrap > .section-right > .media-box > .img-box{
+  width: 100%;
+  height: 220px;
+  background-color: yellowgreen;
+  margin-top: 25px;
+}
+.section-wrap > .section-right > .media-box > .txt-box{
+  width: 100%;
+  height: 75px;
+  background-color: lightcoral;
+  padding-top: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.section-wrap > .section-right > .media-box > .txt-box > .btn{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  border-radius: 50%;
+}
+
+.section-wrap > .section-right > .spec-box{
+  width : 100%;
+  height: 380px;
+  background-color: lightblue;
+  margin-top: 40px;
+}
+.section-wrap > .section-right > .spec-box > .title{
+  width: 100%;
+  height: 30px;
+  background-color: pink;
+}
+.section-wrap > .section-right > .spec-box > .title > h3{
+  line-height: 30px;
+}
+.section-wrap > .section-right > .spec-box > .title > p{
+  width: 90px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 10px
+}
+.section-wrap > .section-right > .spec-box > .nav-box{
+  width: 100%;
+  height: 280px;
+  background-color: coral;
+  margin-top: 30px;
+}
+.section-wrap > .section-right > .spec-box > .nav-box > ul{
+  height: 100%;
+}
+.section-wrap > .section-right > .spec-box > .nav-box > ul > li{
+  width: 100%;
+  height: 25%;
+  background-color: #ddd;
+  position: relative;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+}
+.section-wrap > .section-right > .spec-box > .nav-box > ul > li:last-child{
+  border-bottom: 0;
+}
+
+.section-wrap > .section-right > .spec-box > .nav-box > ul > li > p{
+  margin-left: 20px;
+  margin-top: 23px;
+}
+.section-wrap > .section-right > .spec-box > .nav-box > ul > li > .bar{
+  width: 1px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+.section-wrap > .section-right > .banner-wrap{
+  width: 100%;
+  background-color: purple;
+  margin-top: 40px;
+}
+.section-wrap > .section-right > .banner-wrap > .banner-box{
+  width: 100%;
+  height: 215px;
+  background-color: rgb(200,200,200);
+  margin-bottom: 25px;
+  background-image: url(https://img.kr.news.samsung.com/kr/wp-content/uploads/2020/12/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-%EB%83%89%EC%9E%A5%EA%B3%A01-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.section-wrap > .section-right > .banner-wrap > .banner-box:nth-child(2){
+    background-image: url(https://img.kr.news.samsung.com/kr/wp-content/uploads/2020/05/%ED%8C%A8%EB%B0%80%EB%A6%AC%ED%97%88%EB%B8%8C-%EC%A0%81%EC%9A%A9%ED%95%9C-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-%EB%83%89%EC%9E%A5%EA%B3%A0-%EC%B6%9C%EC%8B%9C1-1.jpg);
+}
+
+
+/* 스타일 끝 */
