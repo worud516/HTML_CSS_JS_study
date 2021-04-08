@@ -31,6 +31,7 @@ a{
 /* 라이브러리 끝 */
 
 /* 스타일 시작 */
+
 .header{
   height: 120px;
   background-color: red;
@@ -46,6 +47,7 @@ a{
   background-color: purple;
 }
 
+
 .main-visual{
   height: 600px;
   background-color: gray;
@@ -54,6 +56,7 @@ a{
   background-position: center;
   background-size: cover;
 }
+
 
 .section-wrap{
   height: 2250px;
@@ -85,14 +88,12 @@ a{
   box-sizing: border-box;
   border-radius: 10px
 }
-
 .section-wrap > .section-left > .content-box{
   width: 100%;
   height: 300px;
   background-color: pink;
   margin-top: 25px;
 }
-
 .section-wrap > .section-left > .content-box > .img-box{
   width: 530px;
   height: 100%;
@@ -106,7 +107,6 @@ a{
 .section-wrap > .section-left > .content-box > .img-box:hover{
   background-size: 120%;
 }
-
 .section-wrap > .section-left > .content-box > .txt-box{
   width: 280px;
   height: 100%;
@@ -150,6 +150,7 @@ a{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 .section-wrap > .section-right{
   width: 430px;
@@ -205,7 +206,6 @@ a{
   top: 15px;
   border-radius: 50%;
 }
-
 .section-wrap > .section-right > .spec-box{
   width : 100%;
   height: 380px;
@@ -250,7 +250,6 @@ a{
 .section-wrap > .section-right > .spec-box > .nav-box > ul > li:last-child{
   border-bottom: 0;
 }
-
 .section-wrap > .section-right > .spec-box > .nav-box > ul > li > p{
   margin-left: 20px;
   margin-top: 23px;
@@ -283,5 +282,84 @@ a{
     background-image: url(https://img.kr.news.samsung.com/kr/wp-content/uploads/2020/05/%ED%8C%A8%EB%B0%80%EB%A6%AC%ED%97%88%EB%B8%8C-%EC%A0%81%EC%9A%A9%ED%95%9C-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-%EB%83%89%EC%9E%A5%EA%B3%A0-%EC%B6%9C%EC%8B%9C1-1.jpg);
 }
 
+
+.section02-wrap{
+  width: 100%;
+  height: 350px;
+  background-color: #357fc8;
+}
+.section02-wrap > .section02{
+  height: 100%;
+  background-color: #aaa;
+  padding-top: 45px;
+  box-sizing: border-box;
+}
+.section02-wrap > .section02 > .title{
+  width: 100%;
+  height: 40px;
+  background-color: pink;
+}
+.section02-wrap > .section02 > .title > h3{
+  line-height: 40px;
+}
+.section02-wrap > .section02 > .title > p{
+  width: 90px;
+  height: 40px;
+  background-color: white;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 10px
+}
+.section02-wrap > .section02 > .media-wrap{
+  width: 100%;
+  height: 200px;
+  background-color: purple;
+  margin-top: 30px;
+}
+.section02-wrap > .section02 > .media-wrap > .media-box{
+  width: calc((100% - 60px) / 4);
+  height: 100%;
+  background-color: gray;
+  position: relative;
+  margin-right: 20px;
+}
+.section02-wrap > .section02 > .media-wrap > .media-box:last-child{
+  margin-right: 0;
+}
+.section02-wrap > .section02 > .media-wrap > .media-box > .img-box{
+  width: 100%;
+  height: 175px;
+  background-color: yellowgreen;
+  overflow: hidden;
+}
+.section02-wrap > .section02 > .media-wrap > .media-box > .img-box > img{
+  width: 100%;
+  transition: 0.5s;
+}
+.section02-wrap > .section02 > .media-wrap > .media-box:hover > .img-box > img{
+  transform: scale(1.1);
+}
+.section02-wrap > .section02 > .media-wrap > .media-box > .txt-box{
+  width: 265px;
+  height: 40px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.footer-wrap{
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+}
+.footer-wrap > .footer{
+  height: 100%;
+  background-color: blue;
+}
 
 /* 스타일 끝 */
