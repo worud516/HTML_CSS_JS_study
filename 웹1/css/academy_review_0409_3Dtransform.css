@@ -1,0 +1,104 @@
+.wrap{
+    width:400px;
+    margin: 0 auto ;
+    text-align:center;
+  }
+  
+  .img-box{
+    width: 400px ;
+    height:400px;
+    border:5px solid red;
+    perspective:1000px; 
+  }
+  
+  .img-box >img {
+    width:100%;
+    transition: 1s;
+  }
+  
+  .rotate:hover > img{
+    transform:rotateY(180deg);
+  }
+  
+  .translate:hover > img{
+    transform : translateZ(200px);
+  }
+  
+  .scale:hover > img{
+    transform: scaleZ(2);
+  }
+
+  .card{
+    position:relative;
+    width:600px;
+    height:378px;
+    backface-visibility: visible;
+    perspective:1000px;
+    margin:0 auto;
+  }
+  .card > div{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    transition:1s;
+  }
+  
+  .card > .front{
+    background-image:url(https://cdn.lcnews.co.kr/news/photo/202003/5187_5775_442.jpg);
+    z-index:2;
+  }
+  .card > .back{
+    background-image:url(https://m.hanacard.co.kr/ATTACH/NEW_MOBILE/images/cardinfo/card_img/04652.png);
+    transform: rotateY(180deg);
+    z-index:1;
+  }
+  
+  .card:hover > .front{
+    transform: rotateY(540deg);
+    z-index:1;
+  }
+  .card:hover > .back{
+    transform: rotateY(720deg);
+    z-index:2;
+  }
+
+  .hello {
+    position: relative;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 200px;
+    background-color: red;
+  }
+  .hello > span {
+    display:inline-block;
+    position: relative;
+    transition: 1s;
+    transform: rotateY(45deg);
+    opacity: 0;
+  }
+  
+  .hello > .hello1 {
+    transition-delay: 0.2s;
+  }
+  .hello > .hello2 {
+    transition-delay: 0.4s;
+  }
+  .hello > .hello3 {
+    transition-delay: 0.8s;
+  }
+  .hello > .hello4 {
+    transition-delay: 1.2s;
+  }
+  .hello > .hello5 {
+    transition-delay: 1.6s;
+  }
+  .hello:hover > span {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  

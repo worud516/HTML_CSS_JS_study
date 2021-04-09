@@ -1,0 +1,47 @@
+h1{
+    text-align:center;
+  }
+  h3{
+    text-align:center;
+  }
+  .info-after{
+    position: relative ;
+  }
+  .info-after::after{
+    content:"이렇게요!";
+    color:white;
+    background-color:#555;
+    margin-left:20px;
+  }
+  
+  .info-before::before{
+    content:"이렇게요!";
+    color:white;
+    background-color:#555;
+    margin-right:20px;
+  }
+
+  .btn{
+    margin: 0 auto;
+    width:200px;
+    height:200px;
+    background:linear-gradient(45deg , #152 , #dd5);
+    margin-bottom:50px;
+    line-height:200px;
+    text-align:center;
+    font-weight:bold;
+    color:white;
+    border-radius:20px;
+    box-shadow:10px 10px 10px #555;
+  }
+  
+  .pointer{
+    cursor: pointer ;
+  }
+  
+  a {
+    display:block;
+    width:200px;
+    text-align:center;
+    margin: 0 auto;
+  }

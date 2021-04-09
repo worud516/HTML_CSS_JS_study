@@ -1,0 +1,53 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+  }
+  h1{
+    text-align:center;
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+  }
+  
+  .sample1 td , .sample1 th , .sample1 table{
+    border:1px solid black;
+  }
+  
+   th , td {
+    height: 50px; /* 각 셀의 크기를 통해 표 크기설정 */
+  }
+  
+  .sample1 table {
+    margin: 0 auto;
+    width: 500px; /* 표 전체 크기 설정 */
+    height: 400px ;
+    /*
+    border-collapse 적용 가능 속성들
+    separate : 표(table)의 테두리와 셀(td)의 테두리 사이에 간격을 둡니다.
+    collapse : 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.
+    initial : 기본값으로 설정합니다.
+    inherit : 부모 요소의 속성값을 상속받습니다.
+    */
+  }
+  
+  .sample2 table {
+    margin: 0 auto ;
+    width: 500px; /* 표 전체 크기 설정 */
+    border-collapse:collapse;
+    border-top:1px solid black;
+  }
+  .sample2 tr , .sample2 td{
+    border-bottom: 1px solid black;
+  }
+  
+  .sample3 table {
+    margin: 0 auto ;
+    width: 500px; /* 표 전체 크기 설정 */
+    border-collapse:collapse;
+    border-top:1px solid black;
+  }
+  .sample3 tr , .sample3 td{
+    border-bottom: 1px solid black;
+  }
+  .sample3 tr:nth-child(2n-1) {
+    background-color: #ddd ;
+  }
