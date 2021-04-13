@@ -1,0 +1,28 @@
+/* 노멀라이징 */
+*{
+    padding: 0;
+    margin: 0;
+  }
+  ul, li{
+    list-style: none;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* 라이브러리 */
+  
+  /* 스타일 */
+  .top-bar-wrap{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+  }
+  
+  .top-bar{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+  }
