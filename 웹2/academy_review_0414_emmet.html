@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    div.row.img-wrap>div.img-box.cell*16>img[src="http://www.bnx.oa.gg/data/Contents/bnx_16fw_visual_$$_list.jpg"]
+
+
+<h1>emmet 기능</h1>
+<p>css 언어를 통해 html 마크업을 진행하는 기능 입니다.</p>
+<p>html 상에서 css 언어를 <mark>띄어쓰기 없이</mark> 작성한 후 탭을 누르면 자동으로 html 마크업이 됩니다.</p>
+<p>ex) ul>li>a</p>
+<p>적용모습</p>
+<p>&#60;ul></p>
+<p>  &#60;li>&#60;a href="">&#60;/a>&#60;/li></p>
+<p>&#60;/ul></p>
+
+<h3>클래스 명도 적용이 가능하다.</h3>
+<p>ex ) ul.nav-wrap>li>a</p>
+<p>적용모습</p>
+<p>&#60;ul class="nav-wrap"></p>
+<p>  &#60;li>&#60;a href="">&#60;/a>&#60;/li></p>
+<p>&#60;/ul></p>
+
+<h3>내부에 들어가는 href,src 등도 사용가능하다.</h3>
+<p>ex ) ul>li>a[src="#"]</p>
+<p>적용모습</p>
+<p>&#60;ul></p>
+<p>  &#60;li>&#60;a href="" src="#">&#60;/a>&#60;/li></p>
+<p>&#60;/ul></p>
+
+
+<h3>내부에 들어가는 텍스트도 작성이 가능하다.</h3>
+<p>ex ) ul>li>a{안녕하세요}</p>
+<p>적용모습</p>
+<p>&#60;ul></p>
+<p>  &#60;li>&#60;a href="" src="">안녕하세요&#60;/a>&#60;/li></p>
+<p>&#60;/ul></p>
+
+<h3>형제 엘리먼트도 만들수 있다.</h3>
+<p>ex ) ul>li>a{안녕하세요}+div</p>
+<p>적용모습</p>
+
+<p>&#60;ul></p>
+  <p>&#60;li></p>
+    <p>&#60;a href="">안녕하세요&#60;/a></p>
+    <p>&#60;div>&#60;/div></p>
+  <p>&#60;/li></p>
+<p>&#60;/ul></p>
+
+    
+
+
+
+<span>ul>li*4>a[href="#"]{1차메뉴 $}</span>
+<p>결과값 </p>
+<ul>
+  <li><a href="#">1차메뉴 1</a></li>
+  <li><a href="#">1차메뉴 2</a></li>
+  <li><a href="#">1차메뉴 3</a></li>
+  <li><a href="#">1차메뉴 4</a></li>
+</ul>
+
+
+<span>ul>li*4>a[href="#"]{1차메뉴 $}+ul>li*4>a[href="#"]{1-2차메뉴 $}</span>
+<p>결과값 </p>
+<ul>
+  <li>
+    <a href="#">1차메뉴 1</a>
+    <ul>
+      <li><a href="#">1-2차메뉴 1</a></li>
+      <li><a href="#">1-2차메뉴 2</a></li>
+      <li><a href="#">1-2차메뉴 3</a></li>
+      <li><a href="#">1-2차메뉴 4</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">1차메뉴 2</a>
+    <ul>
+      <li><a href="#">1-2차메뉴 1</a></li>
+      <li><a href="#">1-2차메뉴 2</a></li>
+      <li><a href="#">1-2차메뉴 3</a></li>
+      <li><a href="#">1-2차메뉴 4</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">1차메뉴 3</a>
+    <ul>
+      <li><a href="#">1-2차메뉴 1</a></li>
+      <li><a href="#">1-2차메뉴 2</a></li>
+      <li><a href="#">1-2차메뉴 3</a></li>
+      <li><a href="#">1-2차메뉴 4</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">1차메뉴 4</a>
+    <ul>
+      <li><a href="#">1-2차메뉴 1</a></li>
+      <li><a href="#">1-2차메뉴 2</a></li>
+      <li><a href="#">1-2차메뉴 3</a></li>
+      <li><a href="#">1-2차메뉴 4</a></li>
+    </ul>
+  </li>
+</ul> 
+
+<span>ul>li*4>a[href="#"]{1차메뉴 $}+ul>li*4>a[href="#"]{1-2차메뉴 $}+ul>li*4>a[href="#"]{1-3차메뉴 $}</span>
+<p>결과값 </p>
+<ul>
+  <li>
+    <a href="#">1차메뉴 1</a>
+    <ul>
+      <li>
+        <a href="#">1-2차메뉴 1</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 2</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 3</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 4</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">1차메뉴 2</a>
+    <ul>
+      <li>
+        <a href="#">1-2차메뉴 1</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 2</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 3</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 4</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">1차메뉴 3</a>
+    <ul>
+      <li>
+        <a href="#">1-2차메뉴 1</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 2</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 3</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 4</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">1차메뉴 4</a>
+    <ul>
+      <li>
+        <a href="#">1-2차메뉴 1</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 2</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 3</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">1-2차메뉴 4</a>
+        <ul>
+          <li><a href="#">1-3차메뉴 1</a></li>
+          <li><a href="#">1-3차메뉴 2</a></li>
+          <li><a href="#">1-3차메뉴 3</a></li>
+          <li><a href="#">1-3차메뉴 4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+.img-box{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .img-box > img{
+    width: 100%;
+  }
+  .test-wrap{
+    max-width:900px;
+    margin:0 auto;
+  }
+  .test{
+    width: 100%;
+    padding-bottom: 54.84%; /* height / width */
+    background-color: red;
+    margin: 0 auto;
+    background-image: url(https://t1.daumcdn.net/cfile/blog/26599D42577AF63136);
+    background-size: cover;
+  }
+  .test2{
+    width: 100%;
+    padding-bottom: 56.25%;
+    background-color: red;
+    margin: 0 auto;
+    background-image: url(https://blog.kakaocdn.net/dn/GAvv9/btqD9uprajP/wyKhhHAHEllxftg8WnkXz1/img.jpg);
+    background-size: cover;
+  }
