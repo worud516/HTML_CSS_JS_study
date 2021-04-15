@@ -1,0 +1,51 @@
+/* 노멀라이징 */
+*{
+  margin: 0 ;
+  padding: 0 ;
+}
+/* 라이브러리 */
+.cell{
+  float: left;
+}
+.row::after{
+  display: block ;
+  content:"";
+  clear: both;
+}
+.con{
+  max-width: 1200px ;
+  margin: 0 auto;
+}
+/* 스타일 */
+
+.wrap > .left{
+  width: 60% ;
+  background-color: #486 ;
+}
+
+.wrap > .left > .top{
+  width: 100% ;
+  padding-bottom: 50% ;
+  background-color: pink ;
+}
+
+.wrap > .left > .btm{
+  width: 100% ;
+  padding-bottom: 50% ;
+  background-color: salmon ;
+}
+
+.wrap > .right{
+  width: 40% ;
+  padding-bottom: 60% ;
+  background-color: #729 ;
+}
+
+@media screen and (max-width: 800px) {
+  .wrap > .left{
+    width: 100% ;
+  }
+  .wrap > .right{
+    width: 100% ;
+  }
+}
