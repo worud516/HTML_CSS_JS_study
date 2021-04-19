@@ -1,0 +1,44 @@
+/* 노멀라이즈 */
+*{
+    padding:0;
+    margin:0;
+  }
+  
+  /* 라이브러리 */
+  
+  body{
+    background-color: #555568 ;
+  }
+  
+  i{
+    color: white ;  
+  }
+  
+  .center{
+    width: 400px ;
+    position:absolute;
+    top: 50% ;
+    left: 50% ;
+    transform:translate(-50%,-50%);
+    text-align: center ;
+  }
+  
+  /* 스타일 */
+  
+  .arrow_down{
+    font-size: 10rem ;
+  }
+  
+  .ambulance-test{
+    font-size: 500px ;
+  }
+  
+  .aa{
+    color : darkred ; 
+    font-size: 100px ;
+  }
+  
+  .center > i{
+    font-size: 200px;
+    color: red;
+  }
