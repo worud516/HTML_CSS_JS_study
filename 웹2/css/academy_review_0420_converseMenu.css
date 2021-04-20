@@ -1,0 +1,112 @@
+/* 노멀라이즈 */
+*{
+    padding: 0 ;
+    margin: 0 ;
+  }
+  ul,li{
+    list-style: none ;
+  }
+  a{
+    color: inherit;
+    text-decoration: none ;
+  }
+  
+  /* 라이브러리 */
+  .row::after{
+    display: block ;
+    content: "";
+    clear:  both;
+  }
+  
+  .cell{
+    float: left ;
+  }
+  
+  /* 스타일 */
+  .top-bar-wrap{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: relative;
+  }
+  
+  .top-bar-wrap > .logo-box > .logo-img{
+    fill: white;
+  /* stroke:red; */
+  }
+  
+  .top-bar-wrap > .menu{
+    color: white;
+    margin: 0 auto;
+    width: 500px;
+  }
+  
+  .top-bar-wrap > .logo-box{
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    line-height: 65px;
+  }
+  
+  .top-bar-wrap > .menu > li{
+    width: 20%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .top-bar-wrap > .menu > li > .nav-2-depth-wrap{
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+    line-height: normal;
+    background-color: #ddd;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: none;
+  }
+  .top-bar-wrap > .menu > li:hover > .nav-2-depth-wrap{
+    display:block
+  }
+  .top-bar-wrap > .menu > li > .nav-2-depth-wrap > ul{
+    display: inline-block;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .top-bar-wrap > .menu > li > .nav-2-depth-wrap > ul > li{
+    margin-left: 20px;
+  }
+  .top-bar-wrap > .menu > li > .nav-2-depth-wrap > ul > li:last-child{
+    margin-right: 0;
+  }
+  .top-bar-wrap > .menu > li > .nav-2-depth-wrap > ul > li > a{
+    font-weight: bold;
+  }
+  .top-bar-wrap > .menu > li > .nav-2-depth-wrap > ul > li > ul{
+    margin-top: 10px;
+    border-top: 1px solid black;
+  }
+  .top-bar-wrap > .menu > li > .nav-2-depth-wrap > ul > li > ul > li{
+    margin-top: 10px;
+  }
+  
+  .top-bar-wrap > .icon-box{
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    color: white;
+    line-height: 60px;
+    font-size: 20px;
+  }
+  .top-bar-wrap > .icon-box > ul > li{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
