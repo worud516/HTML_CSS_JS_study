@@ -27,6 +27,8 @@ console.clear;
 for(var i = 2; i < 10; i++){
   document.write(i + "단<br>");
   for(var j = 1; j < 10; j++){
-    document.write(i + " X " + j + " = " + i * j + "</br>");
+    for(var h = 1; h < 10; h++){
+      document.write(i + " X " + j + " X " + h + " = " + (i * j  * h) + "</br>");
+    }
   };
 };
