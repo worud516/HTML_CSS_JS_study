@@ -1,0 +1,85 @@
+/* 노멀라이즈 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/* 라이브러리 */
+.row:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.cell {
+    float: left;
+}
+
+/* 스타일 */
+body {
+    background: linear-gradient(45deg, #854, #886);
+    height: 100vh;
+}
+
+.tap-wrap {
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tap-wrap>.btn-box>div {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.tap-wrap>.btn-box>div.active {
+    background-color: black;
+}
+
+.tap-wrap>.btn-box>.notice-btn {
+    background-color: red;
+}
+
+.tap-wrap>.btn-box>.qna-btn {
+    background-color: gray;
+}
+
+.tap-wrap>.content-box {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.tap-wrap>.content-box>div {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+}
+
+.tap-wrap>.content-box>div.active {
+    display: block;
+}
+
+.tap-wrap>.content-box>.notice-content {
+    background-color: tomato;
+}
+
+.tap-wrap>.content-box>.qna-content {
+    background-color: salmon;
+}
