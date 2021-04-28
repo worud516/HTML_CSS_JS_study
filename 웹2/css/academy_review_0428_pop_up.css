@@ -1,0 +1,71 @@
+/* 배경색 */
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, violet, dodgerblue, hotpink);
+}
+
+/* 노멀라이즈 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 라이브러리 */
+.row:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.cell {
+    float: left;
+}
+
+/* 스타일 */
+/* 초기화 */
+.reset {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: darkcyan;
+    color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* 팝업 레이어*/
+
+.pop-up-wrap {
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.pop-up-wrap.active {
+    display: none;
+}
+
+
+.pop-up-wrap>.text-area {}
+
+.pop-up-wrap>.btn-area {
+    margin-top: 20px;
+}
+
+.pop-up-wrap>.btn-area>.agree-box {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.pop-up-wrap>.btn-area>.agree-txt {
+    margin-left: 20px;
+    margin-right: 150px;
+}
