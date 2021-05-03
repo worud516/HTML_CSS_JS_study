@@ -1,0 +1,78 @@
+/* 노멀라이징 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.cell {
+    float: left;
+}
+
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/* 스타일 */
+/* ul ul{
+    display: none;
+  } */
+.toggle_menu {
+    position: absolute;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.toggle_menu.active {
+    position: absolute;
+    left: -300px;
+}
+
+.toggle_menu>ul {
+    width: 300px;
+    background-color: red;
+}
+
+.toggle_menu>ul>li {
+    /*   height: 60px; */
+    text-align: center;
+    line-height: 60px;
+}
+
+.toggle_menu>ul>li>ul {
+    background-color: salmon;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s
+}
+
+.toggle_menu>ul>li.active>ul {
+    max-height: 240px;
+}
+
+.toggle_menu>.btn {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: pink;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    cursor: pointer;
+    user-select: none;
+}
