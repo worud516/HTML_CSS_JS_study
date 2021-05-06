@@ -41,6 +41,10 @@ a {
 
 
 /* 스타일 시작 */
+body {
+    overflow-x: hidden;
+}
+
 .top-bar-wrap {
     width: 100%;
     border-bottom: 1px solid #ddd;
