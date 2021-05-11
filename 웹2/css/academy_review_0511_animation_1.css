@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    padding: 5px;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  .wrap {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #dfd, #ddd);
+  }
+  
+  .move-box {
+    width: 100px;
+    line-height: 100px;
+    background: linear-gradient(-45deg, #fdd, #ddd);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* 애니메이션 시작 */
+  
+  .wrap:hover .animation{
+    animation-play-state: running ;  
+  }
+  .animation {
+    animation-name: sbs-test ;
+    animation-duration: 5s ;
+    animation-delay: 0s ;
+    animation-iteration-count: 2 ;
+    /*
+    반복할 숫자 소숫점도 가능
+    infinite 무한 반복
+    */
+    animation-direction: normal ;
+    /* 
+    normal 기본
+    alternate 정방향 역방향 재생
+    reverse 역방향 재생
+    alternate-reverse 역방향 정방향 재생
+    */ 
+    animation-play-state: running ;
+    /*
+    running 재생
+    paused 멈춤
+    */
+    animation-timing-function: linear ;
+    /*
+    linear 
+    ease 기본
+    ease-in
+    ease-out
+    ease-in-out
+    */
+    animation-fill-mode: forwards ;
+    /*
+    none  애니메이션이 끝난 후 상태를 설정하지 않습니다.
+    forwards  애니메이션이 끝난 후 그 지점에 그대로 있습니다.
+    backwards  애니메이션이 끝난 후 시작점으로 돌아옵니다.
+    both  애니메이션이의 앞 뒤 결과를 조합하여 설정합니다.
+    inherit  애니메이션의 상태를 상위 요소한테 상속받습니다.
+    */
+  }
+  
+  @-webkit-keyframes sbs-test {
+    0% {
+      left:0px;
+    }
+    
+    50%{
+      top: 10px ;
+      transform: rotate(45deg) ;
+    }
+    
+    100% {
+      left:500px;
+    }
+  }
+  
