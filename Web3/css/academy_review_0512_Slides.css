@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-wrap {
+    width: 900px;
+    height: 360px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.box-list {
+    position: relative;
+    transition: 1s;
+    top: 0px;
+    /* 1번 슬라이드 top : 0*/
+    /* 2번 슬라이드 top : -360*/
+    /* 3번 슬라이드 top : -720*/
+    /* 4번 슬라이드 top : -1080*/
+}
+
+.box {
+    width: 900px;
+    height: 360px;
+    line-height: 360px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: yellow;
+}
+
+.box4 {
+    background-color: gray;
+}
