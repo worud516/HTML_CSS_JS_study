@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-wrap {
+    width: 900px;
+    height: 360px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.box-list {
+    position: relative;
+    transition: 1s;
+    top: 0px;
+}
+
+.box {
+    width: 900px;
+    height: 360px;
+    line-height: 360px;
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.box.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: yellow;
+}
+
+.box4 {
+    background-color: gray;
+}
