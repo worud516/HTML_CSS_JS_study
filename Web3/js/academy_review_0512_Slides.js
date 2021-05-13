@@ -1,7 +1,21 @@
 $(document).ready(function () {
 
+    var indexNum = 0;
+
     setInterval(function () {
-        console.log("실행되었습니다.")
-    }, 1000);
+
+        if (indexNum > 3) {
+            indexNum = 0;
+        }
+
+        console.log(indexNum);
+
+        $(".box-list").css({
+            "top": (-360 * indexNum) + "px",
+        });
+
+        indexNum++;
+
+    }, 1500);
 
 });
