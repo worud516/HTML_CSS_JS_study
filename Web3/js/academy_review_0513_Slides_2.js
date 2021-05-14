@@ -12,6 +12,9 @@ $(document).ready(function () {
             "left": (-900 * i) + "px",
         });
 
+        $(".dots-wrap > .dots").removeClass("active");
+        $(".dots-wrap > .dots").eq(i).addClass("active");
+
         i++;
 
     }, 1500);
