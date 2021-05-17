@@ -1,33 +1,45 @@
 $(document).ready(function () {
 
-    var i = 0;
+    var indexNum = 0;
+    var box__length = $(".box-wrap > .box-list > .box").length;
 
-    var box_length = $(".box-wrap > .box-list > .box").length;
+    var box__width = $(".box-wrap > .box-list > .box").width();
+    var box__height = $(".box-wrap > .box-list > .box").height();
 
+
+    $(".box-wrap").css({
+        "width": box__width + "px",
+        "height": box__height + "px ",
+    });
+    // alert(box__height);
     $(".box-list").css({
-        "width": 900 * box_length + "px",
+        "width": box__width * box__length + "px",
     })
 
+    for (var i = 0; i < box__length; i++) {
 
-    for (var i = 0; i < box_length; i++) {
-        $(".dots-wrap").append("<li class='dots cell'></li>");
+        $(".dots-wrap").append("<li class='dots'></li>");
+
     };
 
 
     setInterval(function () {
 
-        if (i > box_length - 1) {
-            i = 0;
+        if (indexNum > box__length - 1) {
+            indexNum = 0;
         }
 
         $(".box-list").css({
-            "left": (-900 * i) + "px",
+            "left": -box__width * indexNum + "px",
         });
 
         $(".dots-wrap > .dots").removeClass("active");
-        $(".dots-wrap > .dots").eq(i).addClass("active");
+        $(".dots-wrap > .dots").eq(indexNum).addClass("active");
 
-        i++;
+
+        console.log(indexNum);
+
+        indexNum++;
 
     }, 1000);
 
