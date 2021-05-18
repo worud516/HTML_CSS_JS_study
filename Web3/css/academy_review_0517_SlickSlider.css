@@ -1,0 +1,96 @@
+body {
+    background-color: #ddd;
+}
+
+.slider-wrap {
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.slider-wrap .content-box>img {
+    width: 100%;
+    display: block;
+}
+
+.slider-wrap .content-box {
+    position: relative;
+}
+
+.slider-wrap .content-box>.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-wrap .content-box>.text-box>p {
+    opacity: 0;
+    transition: 1s;
+}
+
+.slider-wrap .slick-slide.slick-current.slick-active .content-box > .text-box>p {
+    opacity: 1;
+}
+
+.slider-wrap .slick-slide.slick-current.slick-active .content-box > .text-box > .tp-text {
+    transition-delay: 0.5s;
+}
+
+.slider-wrap .slick-slide.slick-current.slick-active .content-box > .text-box > .mid-text {
+    transition-delay: 1.0s;
+}
+
+.slider-wrap .slick-slide.slick-current.slick-active .content-box > .text-box > .btm-text {
+    transition-delay: 1.5s;
+}
+
+.slider-wrap2 {
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.slider-wrap2 .content-box>.img-box {
+    width: 100%;
+    padding-bottom: 56.15%;
+    background-image: url(https://t1.daumcdn.net/cfile/blog/26599D42577AF63136);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-wrap2 .content-box {
+    position: relative;
+}
+
+.slider-wrap2 .content-box>.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-wrap2 .content-box>.text-box>p {
+    opacity: 0;
+    transition: 1.3s;
+}
+
+.slider-wrap2 .slick-slide.slick-current.slick-active .content-box > .text-box>p {
+    opacity: 1;
+}
+
+.slider-wrap2 .slick-slide.slick-current.slick-active .content-box > .text-box > .tp-text {
+    transition-delay: 0.5s;
+}
+
+.slider-wrap2 .slick-slide.slick-current.slick-active .content-box > .text-box > .mid-text {
+    transition-delay: 1.0s;
+}
+
+.slider-wrap2 .slick-slide.slick-current.slick-active .content-box > .text-box > .btm-text {
+    transition-delay: 1.5s;
+}
