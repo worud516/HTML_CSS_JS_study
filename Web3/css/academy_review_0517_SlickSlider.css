@@ -46,6 +46,59 @@ body {
     transition-delay: 1.5s;
 }
 
+
+.slider-wrap .slick-next{
+    right: 10px;
+    z-index: 999;
+}
+.slider-wrap .slick-prev{
+    left: 10px;
+    z-index: 999;
+}
+
+.slider-wrap .slick-dots{
+    bottom: 5px;
+}
+.slider-wrap .slick-prev:before, .slick-next:before {
+    color: crimson;
+}
+.slider-wrap .slick-dots li button:before{
+    color: white;
+}
+
+.btn-right{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+}
+.slider-wrap .btn-right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.slider-wrap .btn-right > img{
+    width: 100%;
+}
+
+.btn-left{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    font-size: 25px;
+}
+.slider-wrap .btn-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+
+
+
 .slider-wrap2 {
     max-width: 800px;
     max-height: 800px;
@@ -93,4 +146,23 @@ body {
 
 .slider-wrap2 .slick-slide.slick-current.slick-active .content-box > .text-box > .btm-text {
     transition-delay: 1.5s;
+}
+
+.slider-wrap2 .slick-next{
+    right: 10px;
+    z-index: 999;
+}
+.slider-wrap2 .slick-prev{
+    left: 10px;
+    z-index: 999;
+}
+
+.slider-wrap2 .slick-dots{
+    bottom: 5px;
+}
+.slider-wrap2 .slick-prev:before, .slick-next:before {
+    color: crimson;
+}
+.slider-wrap2 .slick-dots li button:before{
+    color: white;
 }
