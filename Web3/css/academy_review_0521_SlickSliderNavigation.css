@@ -1,0 +1,28 @@
+body {
+    background-color: orange;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.slider-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-contents>a>img {
+    width: 100%;
+}
+
+.slider-wrap .slick-dots {
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-wrap .slick-dots li {
+    width: 25%;
+    margin: 0;
+}

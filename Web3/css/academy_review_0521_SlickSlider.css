@@ -1,0 +1,81 @@
+.cell {
+    float: left;
+}
+
+.row::after {
+    clear: both;
+    contain: "";
+    display: block;
+}
+
+body {
+    background-color: #999;
+}
+
+.slider-container {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-container>.btn01 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.slider-container>.btn02 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.wrap .content>img {
+    width: 100%;
+}
+
+.btn-wrap {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+}
+
+.btn01 {
+    background-color: red;
+}
+
+.btn02 {
+    background-color: blue;
+}
+
+.btn03 {
+    background-color: yellow;
+}
+
+.btn04 {
+    background-color: green;
+}
+
+.btn05 {
+    background-color: pink;
+    position: relative;
+}
+
+.btn05>div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    display: none;
+}
+
+.btn05>div.active {
+    display: block;
+}
