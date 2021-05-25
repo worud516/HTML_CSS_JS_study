@@ -1,0 +1,49 @@
+body {
+    background: #ddd;
+}
+
+.slider-wrap {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.slider-wrap .content {
+    position: relative;
+}
+
+.slider-wrap .content>img {
+    width: 100%;
+}
+
+.dots-wrap {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dots-wrap>.dots {
+    width: 25%;
+    text-align: center;
+}
+
+.slider-wrap .content>.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.slider-wrap .content.active>.text-box>p {
+    opacity: 1;
+}
+
+.slider-wrap .content>.text-box>p {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.slider-num{
+    font-size: 50px;
+}
