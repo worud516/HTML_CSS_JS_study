@@ -1,3 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-box {
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+    background-color: white;
+}
+
+.nav-box>ul {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
 .section01 {
     background-color: #aaa;
 }
@@ -32,4 +66,40 @@
 
 .slide5 {
     background-color: #753;
+}
+
+.fullpage>.footer-wrap .footer {
+    width: 100%;
+    height: 300px;
+    background-color: red;
+}
+
+.fullpage>.section04 {
+    position: relative;
+}
+
+.fullpage>.section04 .box {
+    width: 500px;
+    height: 150px;
+    background-color: purple;
+    position: absolute;
+    transition: 1s;
+}
+
+.fullpage>.section04 .box1 {
+    bottom: 50px;
+    left: -100%;
+}
+
+.fullpage>.section04 .box2 {
+    top: 50px;
+    right: -100%;
+}
+
+.fullpage>.section04 .box1.active {
+    left: 0;
+}
+
+.fullpage>.section04 .box2.active {
+    right: 0;
 }
