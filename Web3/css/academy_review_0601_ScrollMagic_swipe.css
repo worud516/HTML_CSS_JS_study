@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+body {
+    height: 100%;
+}
+
+.green {
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+.purple {
+    background-color: purple;
+    height: 150vh;
+}
+
+.red {
+    background-color: darkred;
+    height: 50vh;
+}
+
+.gray {
+    background-color: gray;
+    height: 80vh;
+}
+
+.orange {
+    background-color: orange;
+    height: 200vh;
+}
