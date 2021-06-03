@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "test1";
+    src: url(../font/EliceDigitalBaeum_Bold.ttf);
+}
+
+@font-face {
+    font-family: "test2";
+    src: url(../font/EliceDigitalBaeum_Bold.ttf);
+}
+
+h1{
+    font-family: test1;
+}
+
+h2{
+    font-family: test2;
+}
