@@ -1,0 +1,100 @@
+./* 노멀라이징 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.cell{
+    float: left;
+    content: "";
+    display: block;
+}
+
+/* 스타일 */
+
+.section-wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: #999;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+
+.section-wrap.bg01{
+    background-image: url(../img/bg_about_02.jpg);
+}
+.section-wrap.bg02{
+    background-image: url(../img/bg_about_03.jpg);
+}
+.section-wrap.bg03{
+    background-image: url(../img/bg_about_04.jpg);
+}
+
+.section-wrap>.animation-wrap{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section-wrap > .animation-wrap > .animation-content{
+    width: 9800px;
+}
+
+.section-wrap > .animation-wrap > .animation-content > .animation-content-list{
+    width: 4900px;
+}
+.section-wrap > .animation-wrap > .animation-content > .animation-content-list>.img-box{
+    width: 700px;
+}
+.section-wrap > .animation-wrap > .animation-content > .animation-content-list>.img-box > img{
+    width: 100%;
+    display: block;
+}
+
+.section-wrap > .animation-wrap > .animation-content > .animation-content-list>.img-box > img:nth-child(1){
+    display: block;
+}
+.section-wrap > .animation-wrap > .animation-content > .animation-content-list>.img-box > img:nth-child(2){
+    display: none;
+}
+
+.section-wrap > .animation-wrap > .animation-content > .animation-content-list>.img-box:hover > img:nth-child(1){
+    display: none;
+}
+.section-wrap > .animation-wrap > .animation-content > .animation-content-list>.img-box:hover > img:nth-child(2){
+    display: block;
+}
+
+.animation-play{
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.animation-reverse{
+    animation-direction: reverse;
+}
+.animation-paused{
+    animation-play-state: paused;
+}
+
+@keyframes test{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
