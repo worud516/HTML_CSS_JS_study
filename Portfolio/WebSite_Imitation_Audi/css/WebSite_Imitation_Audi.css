@@ -1,0 +1,1622 @@
+/* 노멀라이징 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.cell {
+    float: left;
+}
+
+.cell-r {
+    float: right;
+}
+
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.con {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 스타일 */
+.quick-right-box-wrap {
+    width: 50px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    top: 35%;
+    z-index: 9999;
+}
+
+.quick-right-box-wrap>.quick-right-box {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    transition: 0.3s;
+}
+
+.quick-right-box-wrap>.quick-right-box>img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quick-right-box-wrap.active {
+    right: 50px;
+}
+
+.quick-left-box-wrap {
+    width: 130px;
+    height: 200px;
+    position: fixed;
+    right: -100px;
+    top: 35%;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.quick-left-box-wrap>.left-box {
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.quick-left-box-wrap>.left-box>.text-box {
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.top-bor-wrap {
+    width: 100%;
+    height: 70px;
+}
+
+.top-bor-wrap>.top-1400box {
+    width: 1400px;
+    height: 70px;
+    z-index: 99999999999;
+
+}
+
+.top-bor-wrap>.top-1400box>.menu-bor {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.top-bor-wrap>.top-1400box>.menu-bor>ul>li {
+    line-height: 70px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.top-bor-wrap>.top-1400box>.menu-bor>ul>li>i {
+    margin-right: 5px;
+}
+
+.red-logo {
+    background-color: rgb(245, 5, 55);
+    content: "";
+    display: inline-block;
+    height: 11px;
+    margin-left: 3px;
+    margin-right: 6px;
+    transform: skew(-30deg);
+    width: 12px;
+}
+
+.top-bor-wrap>.top-1400box>.menu-bor>ul>li:nth-child(1) {
+    margin-left: 100px;
+}
+
+.top-bor-wrap>.top-1400box>.menu-bor>ul>li:hover {
+    color: gray;
+}
+
+.top-bor-wrap>.top-1400box>.Audi-logo-box {
+    width: 30%;
+    height: 70px;
+    position: relative;
+}
+
+.top-bor-wrap>.top-1400box>.Audi-logo-box>.Audi-logo {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    background-image: url(../img/Audi_Logo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.nav-2-depth-wrap > div{    
+    top: -100%;
+    transition: 0.5s;
+}
+
+.nav-2-depth-wrap > div.active{    
+    top: 70px;
+    z-index: 9999;
+}
+
+.menu {
+    width: 1400px;
+    height: 450px;
+    background-color: white;
+    z-index: 0;
+    position: absolute;
+    top: -100%;
+    transition: 0.5s;
+}
+
+.menu>.content-box-wrap {
+    width: 21%;
+    height: 100%;
+    font-size: 14px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.menu>.content-box-wrap:first-child {
+    margin-left: 100px;
+}
+
+.menu>.content-box-wrap:last-child {
+    margin-right: 100px;
+}
+
+.menu>.content-box-wrap>.top {
+    width: 100%;
+    height: 65%;
+}
+
+.menu>.content-box-wrap>.bottom {
+    width: 100%;
+    height: 35%;
+}
+
+.menu>.content-box-wrap:first-child>.top>a {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu>.content-box-wrap>.top>a:first-child {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu>.content-box-wrap>.bottom>a:first-child {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu>.content-box-wrap:nth-child(2)>.bottom>.test-drive-box>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.menu>.content-box-wrap:nth-child(2)>.bottom>.test-drive-box>a {
+    line-height: 30px;
+}
+
+.menu>.content-box-wrap:nth-child(3)>.bottom>.test-drive-box>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.menu>.content-box-wrap:nth-child(3)>.bottom>.test-drive-box>a {
+    line-height: 30px;
+}
+
+.menu>.content-box-wrap:nth-child(4)>.bottom {
+    position: relative;
+}
+
+.menu>.content-box-wrap:nth-child(4)>.bottom>.xbox {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+.car-menu-box {
+    width: 1400px;
+    height: 700px;
+    background-color: white;
+    z-index: 0;
+    position: absolute;
+    top: -100%;
+    transition: 0.5s;
+}
+
+.car-menu-box:last-child{
+    height: 150px;
+}
+
+.car-menu-box:last-child>.search-box-wrap{
+    width: 87%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.car-menu-box:last-child>.search-box-wrap>.search-box{
+    width: 500px;
+    height: 40px;
+    margin-top: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.car-menu-box:last-child>.search-box-wrap>.xbox2{
+    font-size: 30px;
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+}
+.car-menu-box:last-child>.search-box-wrap>.search-img{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.car-menu-box>.car-wrap {
+    width: 87%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.car-menu-box>.car-wrap>.car-left-box {
+    width: 30%;
+    height: 100%;
+}
+
+.car-menu-box>.car-wrap>.car-left-box>.car-modle-box {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    box-sizing: border-box;
+    margin-top: 20px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.car-menu-box>.car-wrap>.car-left-box>.car-modle-box:hover {
+    background-color: #ddd;
+}
+
+.car-menu-box>.car-wrap>.car-left-box>.car-modle-box>a {
+    margin-left: 20px;
+}
+
+.car-menu-box>.car-wrap>.car-left-box>.car-modle-box>img {
+    width: 100px;
+    height: 45px;
+    background-color: #ddd;
+}
+
+.car-menu-box>.car-wrap>.car-right-box {
+    width: 70%;
+    height: 100%;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.top-box {
+    width: 100%;
+    height: 60%;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.top-box>img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.bottom-box {
+    width: 100%;
+    height: 40%;
+    font-size: 14px;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.bottom-box>.bottom-left-box {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.bottom-box>.bottom-left-box>a {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.bottom-box>.bottom-left-box>p {
+    font-weight: bold;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.bottom-box>.bottom-left-box>a:hover {
+    color: #bbb;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.bottom-box>.bottom-right-box {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.car-menu-box>.car-wrap>.car-right-box>.bottom-box>.bottom-right-box>.xbox {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+.main-model-wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    background-image: url(../img/e-tron-Sportback_1920x1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main-model-wrap>.box1400 {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-model-wrap>.gradientbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(black 5%, transparent 50%, black 100%);
+}
+
+.main-model-wrap>.box1400>.text-box-wrap {
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.main-model-wrap>.box1400>.text-box-wrap>.text-box {
+    width: 100%;
+    height: 130px;
+    color: white;
+    margin-top: 25px;
+}
+
+.main-model-wrap>.box1400>.text-box-wrap>.text-box>p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.main-model-wrap>.box1400>.text-box-wrap>.text-box>p:last-child {
+    font-size: 20px;
+}
+
+.main-model-wrap>.box1400>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    margin-left: 470px;
+    margin-top: 10px;
+}
+
+.main-model-wrap>.box1400>.text-box-wrap>.read-more:hover {
+    background-color: #bbb;
+}
+
+
+
+
+
+.search-new-vehicle-inventory-wrap {
+    width: 100%;
+    height: 80px;
+    background-color: #666;
+}
+
+.search-new-vehicle-inventory-wrap>.box90 {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.search-new-vehicle-inventory {
+    width: 10%;
+    height: 100%;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box {
+    width: 20%;
+    height: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+    font-weight: bold;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.model-text {
+    color: #ddd;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.new-car-box {
+    height: 30px;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.new-car-box:hover {
+    border-bottom: 2px solid white;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.new-car-box>.font-arrow {
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.new-car-box>.font-arrow.active {
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.car-select-list {
+    width: 100%;
+    height: 0px;
+    background-color: #ddd;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.car-select-list.active {
+    height: 300px;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.car-select-list>.model-title>p {
+    color: #bbb;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.car-select-list>.model-title>.detail-model>p {
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.model-box>.car-select-list>.model-title>.detail-model>p:hover {
+    color: #bbb;
+}
+
+
+.search-new-vehicle-inventory-wrap>.box90>.new-cars {
+    width: 10%;
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.new-cars>span>span:first-child {
+    font-weight: bold;
+}
+
+.search-new-vehicle-inventory-wrap>.box90>.new-cars>span:hover {
+    color: gray;
+}
+
+
+
+
+
+
+
+.model-search-wrap {
+    width: 100%;
+    height: 230px;
+}
+
+.model-search-wrap>.Choice-box {
+    width: 100%;
+    height: 100px;
+}
+
+.model-search-wrap>.Choice-box>span {
+    line-height: 100px;
+    margin-left: 50px;
+    color: #bbb;
+}
+
+.model-search-wrap>.Choice-box>span:hover {
+    color: #ddd;
+}
+
+.model-search-wrap>.Choice-box>span.active {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.model-search-wrap>.relative-box {
+    width: 100%;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap>.left-arrow {
+    width: 50px;
+    height: 100%;
+    color: gray;
+    border-right: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap>.left-arrow.active {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap>.right-arrow {
+    width: 50px;
+    height: 100%;
+    color: gray;
+    border-left: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    opacity: 1;
+    visibility: inherit;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap>.right-arrow.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap>.car_list_model .content>img {
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap>.car_list_model .content>span {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap>.car_list_model .content:hover>img {
+    transform: scale(1.1);
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap>.car_list_model .content:hover>span {
+    color: #666;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+.model-search-wrap>.relative-box>.model-img-wrap2 {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+    position: relative;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2>.left-arrow2 {
+    width: 50px;
+    height: 100%;
+    color: gray;
+    border-right: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2>.left-arrow2.active {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2>.right-arrow2 {
+    width: 50px;
+    height: 100%;
+    color: gray;
+    border-left: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    opacity: 1;
+    visibility: inherit;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2>.right-arrow2.active {
+    opacity: 0;
+    visibility: hidden;
+}
+.model-search-wrap>.relative-box>.model-img-wrap2>.car_list_model2>.slick-list > .slick-track{
+    margin-left: 0;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2>.car_list_model2 .content2>img {
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2>.car_list_model2 .content2>span {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2>.car_list_model2 .content:hover>img {
+    transform: scale(1.1);
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2>.car_list_model2 .content:hover>span {
+    color: #666;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.model-search-wrap>.relative-box>.model-img-wrap2.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+.read-more-wrap {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+}
+
+.read-more-wrap>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.read-more-wrap>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/730x730\ \(3\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.read-more-wrap>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 475px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.read-more-wrap9 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+}
+
+.read-more-wrap9>.box-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.read-more-wrap9>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap9>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 475px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap9>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap9>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap9>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.read-more-wrap9>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/E-TRON_730x730.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.read-more-wrap10 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+}
+
+.read-more-wrap10>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.read-more-wrap10>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/q4-e-tron_730x730.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.read-more-wrap10>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap10>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap10>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap10>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap10>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.read-more-wrap2 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+}
+
+.read-more-wrap2>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+
+.read-more-wrap2>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap2>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap2>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap2>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap2>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.read-more-wrap2>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/210203_Audi_Angola_MainstageTeaser_730x730.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.read-more-wrap3 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+}
+
+.read-more-wrap3>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.read-more-wrap3>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/730x730.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.read-more-wrap3>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap3>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap3>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap3>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap3>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+
+
+.read-more-wrap4 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+}
+
+.read-more-wrap4>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+
+.read-more-wrap4>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap4>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap4>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap4>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap4>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.read-more-wrap4>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/730x730\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.read-more-wrap5 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+}
+
+.read-more-wrap5>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.read-more-wrap5>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/AQ8_730x730.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.read-more-wrap5>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap5>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap5>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap5>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap5>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+
+.read-more-wrap6 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+}
+
+.read-more-wrap6>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+
+.read-more-wrap6>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap6>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap6>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap6>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap6>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.read-more-wrap6>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/AQ7_730x730.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.read-more-wrap7 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+.read-more-wrap7>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.read-more-wrap7>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/Audi_SQ8_730x730.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.read-more-wrap7>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap7>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.read-more-wrap7>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap7>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap7>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+
+.read-more-wrap8 {
+    width: 100%;
+    max-height: 800px;
+    margin-top: 250px;
+    background-color: black;
+}
+
+.read-more-wrap8>.box-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+
+.read-more-wrap8>.box-wrap>.right-box {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.read-more-wrap8>.box-wrap>.right-box>.text-box-wrap {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+    color: white;
+}
+
+.read-more-wrap8>.box-wrap>.right-box>.text-box-wrap>.text-box {
+    width: 100%;
+}
+
+.read-more-wrap8>.box-wrap>.right-box>.text-box-wrap>.text-box>p:nth-child(1) {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.read-more-wrap8>.box-wrap>.right-box>.text-box-wrap>.read-more {
+    width: 230px;
+    height: 55px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+}
+
+.read-more-wrap8>.box-wrap>.left-box {
+    width: 50%;
+    padding-bottom: 50%;
+    background-image: url(../img/730x730__0000_zubehoer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+.sns-box-wrap {
+    width: 100%;
+    height: 800px;
+}
+
+.sns-box-wrap>.sns-box {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.sns-box-wrap>.sns-box>.top-box {
+    height: 54px;
+    margin-bottom: 36px;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 54px;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap {
+    height: 600px;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap>.bottom-box {
+    width: 33%;
+    margin-right: 0.5%;
+    height: 100%;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap>.bottom-box:last-child {
+    margin-right: 0;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap>.bottom-box>.b-top-box {
+    width: 100%;
+    height: 50%;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap>.bottom-box>.b-top-box>img {
+    width: 100%;
+    height: 100%;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap>.bottom-box>.b-bottom-box {
+    width: 100%;
+    height: 50%;
+    background-color: #ddd;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap>.bottom-box>.b-bottom-box>.top-text {
+    width: 90%;
+    height: 25%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap>.bottom-box>.b-bottom-box>.mid-text {
+    width: 90%;
+    height: 45%;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.sns-box-wrap>.sns-box>.bottom-box-wrap>.bottom-box>.b-bottom-box>.btm-text {
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.footer-wrap {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    color: white;
+}
+
+.footer-wrap>.menu-wrap {
+    width: 90%;
+    height: 85%;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.footer-wrap>.menu-wrap>.up-box {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+.footer-wrap>.menu-wrap>.up-box:hover {
+    color: grey;
+}
+
+.footer-wrap>.menu-wrap>.up-box>.up {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.footer-wrap>.menu-wrap>.up-box>.up>i {
+    font-size: 20px;
+}
+
+
+.footer-wrap>.menu-wrap>.box-20-wrap {
+    width: 100%;
+    height: 80%;
+}
+
+.footer-wrap>.menu-wrap>.box-20-wrap>.box-20 {
+    width: 15%;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-wrap>.menu-wrap>.box-20-wrap>.box-20:first-child {
+    margin-left: 165px;
+}
+
+.footer-wrap>.menu-wrap>.box-20-wrap>.box-20:last-child {
+    margin-right: 165px;
+}
+
+.footer-wrap>.menu-wrap>.box-20-wrap>.box-20>ul>li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.footer-wrap>.menu-wrap>.box-20-wrap>.box-20>ul>li:hover {
+    color: gray;
+}
+
+.footer-wrap>.menu-wrap>.box-20-wrap>.box-20>ul>li:first-child {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.footer-wrap>.menu-wrap>.logo-box-wrap {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+.footer-wrap>.menu-wrap>.logo-box-wrap>.logo-box {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.footer-wrap>.menu-wrap>.logo-box-wrap>.logo-box>i:first-child {
+    margin-right: 10px;
+}
+
+.footer-wrap>.menu-wrap>.logo-box-wrap>.logo-box>i:hover {
+    color: gray;
+}
+
+
+
+.footer-wrap>.last-box {
+    width: 90%;
+    height: 15%;
+    margin: 0 auto;
+}
+
+.footer-wrap>.last-box>.Audi-Korea-box {
+    width: 20%;
+    height: 50%;
+    padding-top: 1%;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: grey;
+}
+
+.footer-wrap>.last-box>.menu-bor {
+    width: 80%;
+    height: 50%;
+    padding-top: 1%;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.footer-wrap>.last-box>.menu-bor>ul>li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-wrap>.last-box>.menu-bor>ul>li:hover {
+    color: gray;
+}
+
+.footer-wrap>.last-box>.warning-box {
+    width: 100%;
+    height: 50%;
+    padding-top: 1%;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: grey;
+}
