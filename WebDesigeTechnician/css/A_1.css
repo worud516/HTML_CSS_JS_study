@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clearfic::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+body{
+    color: #222328
+}
+
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+header h1{
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+}
+header nav{
+    float: right;
+    width: 700px;
+    margin-top: 30px;
+    
+}
+header nav ul.gnb{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+header nav ul.gnb>li{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+header nav ul.gnb>li>a{
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+header nav ul.gnb>li:hover>a{
+    background-color: #ee9797;
+    color: #fff;
+}
+header nav ul.gnb>li>ul.sub{
+    width: 100%;
+    line-height: 40px;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.subborder1{
+    border-left: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.subborder2{
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+header nav ul.gnb>li>ul.sub>li{
+    width: 100%;
+    height: 40px;
+}
+header nav ul.gnb>li>ul.sub>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header nav ul.gnb>li>ul.sub>li:hover>a{
+    background-color: #ee9797;
+    color: #fff;
+}
+
+
+.slide{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #bbb;
+}
+.slide > ul.slide_all{
+    width: 100%;
+    height: 300px;
+}
+.slide ul.slide_all>li{
+    width: 100%;
+    position: relative;
+    transition: 1s;
+    top: 0;
+}
+.contents{
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #ddd;
+}
