@@ -20,4 +20,19 @@ $(document).ready(function(){
           slideI++;
     },3000);
 
+
+    $(".contents .notice_gal h3").click(function(){
+        $(".contents .notice_gal h3, .contents .notice_gal ul").removeClass("on");
+        $(this).addClass("on");
+        $(this).next("ul").addClass("on");
+    });
+
+    $("ul.notice li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+
+    $("button").click(function(){
+        $(".modal").fadeOut();
+    });
+
 });
