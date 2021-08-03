@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    $(".content .notice ul li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+
+    $(".btn").eq(0).click(function(){
+        $(".modal").fadeOut();
+    });
+    
 
     $("header nav ul.gnb>li").hover(function(){
         $("header nav .nav_bg").stop().slideDown();
@@ -8,11 +16,7 @@ $(document).ready(function(){
         $("header nav .nav_bg").stop().slideUp();
         $("header nav ul.gnb>li>ul.sub").stop().slideUp();
     });
-
-
-
-
-
+ 
     var slideNum = 0;
 
     setInterval(function(){
@@ -25,6 +29,11 @@ $(document).ready(function(){
         });
     },3000);
 
+
+    $("footer .fam p").click(function(){
+        $(this).toggleClass("on");
+        $("footer .fam ul").stop().slideToggle();
+    });
 
 
 });
