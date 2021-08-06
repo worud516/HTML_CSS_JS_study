@@ -192,13 +192,13 @@ header nav ul.gnb>li>ul.sub>li>a{
     text-indent: -999px;
 }
 .contents .notice_gal ul.gal li:nth-child(1){
-    background-image: url(../images/01.jpg);
+    background-image: url(../images/A_1/01.jpg);
 }
 .contents .notice_gal ul.gal li:nth-child(2){
-    background-image: url(../images/02.jpg);
+    background-image: url(../images/A_1/02.jpg);
 }
 .contents .notice_gal ul.gal li:nth-child(3){
-    background-image: url(../images/03.jpg);
+    background-image: url(../images/A_1/03.jpg);
 }
 .contents .notice_gal ul.gal li a{
     display: block;
