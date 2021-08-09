@@ -106,32 +106,32 @@ header .nav > ul.nav_all > li > ul > li > a{
     height: 100%;
 }
 
-section.slide{
+.slide{
     width: 100%;
     height: 300px;
 }
-section.slide .slideall{
+.slide .slideall{
     width: 100%;
     height: 100%;
     position: relative;
 }
-section.slide .slideall a{
+.slide .slideall a{
     position: absolute;
     top: 0;
     left: 0;
 }
 
 
-section.content{
+.content{
     width: 100%;
     height: 200px;
 }
-section.content section.notice{
+.content section.notice{
     width: 400px;
     height: 200px;
     float: left;
 }
-section.content section.notice h2{
+.content section.notice h2{
     font-size: 20px;
     width: 90px;
     height: 30px;
@@ -140,27 +140,27 @@ section.content section.notice h2{
     background-color: rgb(60, 214, 73);
     color: whitesmoke;
 }
-section.content section.notice ul{
+.content section.notice ul{
     width: 100%;
     height: 170px;
     border: 1px solid black;
     box-sizing: border-box;
 }
-section.content section.notice ul>li{
+.content section.notice ul>li{
     font-size: 18px;
     line-height: 28px;
 }
-section.content section.notice ul>li:hover{
+.content section.notice ul>li:hover{
     background-color: rgb(60, 214, 73);
     color: whitesmoke;
 }
-section.content section.notice ul>li>a{
+.content section.notice ul>li>a{
     display: block;
     width: 100%;
     padding-left: 5px;
     box-sizing: border-box;
 }
-section.content section.notice ul>li>a>.day{
+.content section.notice ul>li>a>.day{
     float: right;
     font-size: 14px;
     padding-right: 5px;
@@ -168,12 +168,12 @@ section.content section.notice ul>li>a>.day{
 }
 
 
-section.content section.gal{
+.content section.gal{
     width: 400px;
     height: 200px;
     float: left;
 }
-section.content section.gal h2{
+.content section.gal h2{
     font-size: 20px;
     width: 90px;
     height: 30px;
@@ -183,12 +183,12 @@ section.content section.gal h2{
     color: whitesmoke;
 }
 
-section.content section.gal .imgall{
+.content section.gal .imgall{
     width: 100%;
     height: 170px;
     background-color: tomato;
 }
-section.content section.gal .imgall a{
+.content section.gal .imgall a{
     display: block;
     width: 130px;
     height: 130px;
@@ -198,19 +198,19 @@ section.content section.gal .imgall a{
     padding: 10px;
     box-sizing: border-box;
 }
-section.content section.gal .imgall a img:hover{
+.content section.gal .imgall a img:hover{
     opacity: 0.5;
 }
 
 
 
 
-section.content section.banner{
+.content section.banner{
     width: 400px;
     height: 200px;
     float: left;
 }
-section.content section.banner h3{
+.content section.banner h3{
     font-size: 20px;
     width: 90px;
     height: 30px;
@@ -219,12 +219,12 @@ section.content section.banner h3{
     background-color: rgb(60, 214, 73);
     color: whitesmoke;
 }
-section.content section.banner a{
+.content section.banner a{
     display: block;
     width: 100%;
     height: 170px;
 }
-section.content section.banner a img{
+.content section.banner a img{
     width: 100%;
 }
 

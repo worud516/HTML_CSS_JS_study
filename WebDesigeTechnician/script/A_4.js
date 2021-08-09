@@ -9,7 +9,7 @@ $(document).ready(function(){
     })
 
 
-    $("section.slide .slideall a").eq(0).siblings().hide();
+    $(".slide .slideall a").eq(0).siblings().hide();
 
     var slideI = 0;
 
@@ -18,8 +18,8 @@ $(document).ready(function(){
         if(slideI >= 3){
             slideI = 0;
         }
-        $("section.slide .slideall a").eq(slideI).siblings().fadeOut(1000);
-        $("section.slide .slideall a").eq(slideI).fadeIn(1000);
+        $(".slide .slideall a").eq(slideI).siblings().fadeOut(1000);
+        $(".slide .slideall a").eq(slideI).fadeIn(1000);
 
     }, 3000);
     
@@ -28,7 +28,7 @@ $(document).ready(function(){
     });
 
 
-    $("section.content section.notice ul>li:first-child").click(function(){
+    $(".content section.notice ul>li:first-child").click(function(){
         $(".modal").fadeIn();
     });
     $("button").click(function(){
