@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+header h1{
+    float: left;
+    width: 200px;
+    height: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+header h1 > a{
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+header h1 a > img{
+    width: 100%;
+}
+header .nav{
+    float: left;
+    width: 1000px;
+    height: 100%;
+    position: relative;
+}
+header .nav .bnav{
+    width: 1200px;
+    height: 150px;
+    background-color: black;
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    display: none;
+    z-index: 9;
+}
+header .nav > ul.nav_all{
+    width: 600px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 10;
+}
+header .nav > ul.nav_all > li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+header .nav > ul.nav_all > li:hover{
+    background-color: black;
+    color: white;
+}
+header .nav > ul.nav_all > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header .nav > ul.nav_all > li:first-child{
+    border-left: 1px solid black;
+}
+header .nav > ul.nav_all > li > ul{
+    background-color: black;
+    color: white;
+    display: none;
+}
+header .nav > ul.nav_all > li > ul > li{
+    font-size: 18px;
+    font-weight: normal;
+}
+header .nav > ul.nav_all > li > ul > li:hover{
+    background-color: white;
+    color: black;
+}
+header .nav > ul.nav_all > li > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.slide{
+    width: 100%;
+    height: 300px;
+}
+section.slide .slideall{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section.slide .slideall a{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+section.content{
+    width: 100%;
+    height: 200px;
+}
+section.content section.notice{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+section.content section.notice h2{
+    font-size: 20px;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(60, 214, 73);
+    color: whitesmoke;
+}
+section.content section.notice ul{
+    width: 100%;
+    height: 170px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+section.content section.notice ul>li{
+    font-size: 18px;
+    line-height: 28px;
+}
+section.content section.notice ul>li:hover{
+    background-color: rgb(60, 214, 73);
+    color: whitesmoke;
+}
+section.content section.notice ul>li>a{
+    display: block;
+    width: 100%;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+section.content section.notice ul>li>a>.day{
+    float: right;
+    font-size: 14px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+
+section.content section.gal{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+section.content section.gal h2{
+    font-size: 20px;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(60, 214, 73);
+    color: whitesmoke;
+}
+
+section.content section.gal .imgall{
+    width: 100%;
+    height: 170px;
+    background-color: tomato;
+}
+section.content section.gal .imgall a{
+    display: block;
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+section.content section.gal .imgall a img:hover{
+    opacity: 0.5;
+}
+
+
+
+
+section.content section.banner{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+section.content section.banner h3{
+    font-size: 20px;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(60, 214, 73);
+    color: whitesmoke;
+}
+section.content section.banner a{
+    display: block;
+    width: 100%;
+    height: 170px;
+}
+section.content section.banner a img{
+    width: 100%;
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: skyblue;
+}
+footer .footmenu_box{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+footer .footmenu_box .footmenu{
+    width: 100%;
+    height: 50px;
+}
+footer .footmenu_box .footmenu>ul{
+    width: 100%;
+    height: 100%;
+}
+footer .footmenu_box .footmenu>ul>li{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    float: left;
+}
+footer .footmenu_box .footmenu>ul>li>a:hover{
+    color: whitesmoke;
+}
+footer .footmenu_box .copyright{
+    width: 100%;
+    height: 50px;
+}
+footer .footmenu_box .copyright>ul{
+    width: 100%;
+    height: 100%;
+}
+footer .footmenu_box .copyright>ul>li{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    float: left;
+}
+
+footer .fs{
+    width: 200px;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+footer .fs > ul{
+    width: 150px;
+    margin: 0 auto;
+}
+footer .fs > ul > p{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background-color: wheat;
+    cursor: pointer;
+}
+footer .fs > ul > li {
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    display: none;
+}
+footer .fs > ul > li:hover{
+    background-color: wheat;
+}
+footer .fs > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;
+}
+.modal .title{
+    width: 800px;
+    height: 700px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: relative;
+}
+.modal .title p{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+.modal .title span{
+    font-size: 30px;
+}
+.modal .title button{
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+}
