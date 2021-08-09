@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     }, 3000);
     
-    $("footer .fs > ul > p").click(function(){
+    $("footer .fs > p").click(function(){
         $("footer .fs > ul > li").stop().slideToggle();
     });
 
