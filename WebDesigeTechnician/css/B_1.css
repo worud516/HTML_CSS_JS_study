@@ -116,6 +116,12 @@ header nav ul.gnb>li>ul.sub>li:hover>a{
     background-color: #ee9797;
     color: #fff;
 }
+header nav ul.gnb>li:nth-child(3)>ul.sub>li:last-child>a{
+    opacity: 0;
+}
+header nav ul.gnb>li:nth-child(4)>ul.sub>li:last-child>a{
+    opacity: 0;
+}
 
 .slide{
     width: 100%;
