@@ -9,4 +9,17 @@ $(document).ready(function(){
     })
     
 
+
+    var slidenum = 0;
+    setInterval(function(){
+        slidenum++;
+        if(slidenum >= 3){
+            slidenum = 0;
+        }
+        $(".slide ul").css({
+            "top": (-300 * slidenum) + "px"
+        });
+
+    },3000);
+
 });

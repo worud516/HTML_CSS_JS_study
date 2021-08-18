@@ -9,6 +9,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
+img{
+    vertical-align: top;
+}
 .clearfix::after{
     display: block;
     content: "";
@@ -34,7 +37,6 @@ a{
     position: absolute;
     top: 100px;
     left: 0;
-    z-index:-10;
     display: none;
 }
 
@@ -54,6 +56,7 @@ header nav{
     width: 1000px;
     height: 100%;
     float: left;
+    position: relative;
 }
 header nav>ul{
     width: 600px;
@@ -62,6 +65,7 @@ header nav>ul{
     line-height: 50px;
     margin-top: 50px;
     margin-left: 380px;
+    position: absolute;
 }
 header nav>ul>li{
     width: 25%;
@@ -99,4 +103,19 @@ header nav>ul>li>ul>li:hover{
 }
 header nav>ul>li>ul>li>a{
     display: block;
+}
+
+.slide{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+}
+.slide ul{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0px;
+    transition: 1s;
 }
