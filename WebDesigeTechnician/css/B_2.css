@@ -155,6 +155,7 @@ header nav>ul>li>ul>li>a{
     height: 170px;
 }
 .content .gongi > ul > li{
+    height: 28.3px;
     line-height: 28px;
 }
 .content .gongi > ul > li:hover{
@@ -165,6 +166,6 @@ header nav>ul>li>ul>li>a{
     width: 100%;
 }
 .content .gongi > ul > li > a > span{
-    margin-left: 240px;
-    font-size: 14px;
+    margin-left: 255px;
+    font-size: 12px;
 }
