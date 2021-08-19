@@ -195,3 +195,11 @@ header nav>ul>li>ul>li>a{
     display: block;
     width: 100%;
 }
+
+.content .baro > h2{
+    display: none;
+}
+.content .baro > a{
+    display: block;
+    width: 100%;
+}
