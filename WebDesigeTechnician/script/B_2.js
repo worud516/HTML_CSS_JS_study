@@ -21,5 +21,13 @@ $(document).ready(function(){
         });
 
     },3000);
+   
+    $(".content .gongi > ul > li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+
+    $("button").click(function(){
+        $(".modal").fadeOut();
+    });
 
 });
