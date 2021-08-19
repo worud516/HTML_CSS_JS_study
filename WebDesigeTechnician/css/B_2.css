@@ -169,3 +169,29 @@ header nav>ul>li>ul>li>a{
     margin-left: 255px;
     font-size: 12px;
 }
+
+
+.content .gal h2{
+    background-color: lightgreen;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0px 15px 0px 0px;
+}
+.content .gal > ul{
+    width: 100%;
+    height: 170px;
+}
+.content .gal > ul > li{
+    width: 110px;
+    height: 110px;
+    margin-left: 17.5px;
+    margin-top: 30px;
+    float: left;
+}
+.content .gal > ul > li > a{
+    display: block;
+    width: 100%;
+}
