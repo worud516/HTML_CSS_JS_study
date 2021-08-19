@@ -130,3 +130,41 @@ header nav>ul>li>ul>li>a{
     top: 0px;
     transition: 1s;
 }
+
+
+.content{
+    width: 100%;
+    height: 200px;
+    color:#333333;
+}
+.content section{
+    width: 400px;
+    float: left;
+}
+.content .gongi h2{
+    background-color: lightgreen;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0px 15px 0px 0px;
+}
+.content .gongi > ul{
+    width: 100%;
+    height: 170px;
+}
+.content .gongi > ul > li{
+    line-height: 28px;
+}
+.content .gongi > ul > li:hover{
+    background-color: lightgreen;
+}
+.content .gongi > ul > li > a{
+    display: block;
+    width: 100%;
+}
+.content .gongi > ul > li > a > span{
+    margin-left: 240px;
+    font-size: 14px;
+}
