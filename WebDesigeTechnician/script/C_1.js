@@ -9,4 +9,31 @@ $(document).ready(function(){
     
 
 
+    var num = 0;
+
+    $(".wrap-sub .slide>ul>li").eq(0).siblings().fadeOut();
+    $(".wrap-sub .slide>ul>li").eq(0).fadeIn();
+
+    setInterval(function(){
+        num++;
+        if( num >= 3){
+            num = 0;
+        }
+        $(".wrap-sub .slide>ul>li").eq(num).siblings().fadeOut(1000);
+        $(".wrap-sub .slide>ul>li").eq(num).fadeIn(1000);
+    },3000);
+
+
+    
+    
+    $(".contents .gon h2.hhh").click(function(){
+        $(".contents .gal").addClass("on");
+    });
+
+    $(".contents .gon h2.hh").click(function(){
+        $(".contents .gal").removeClass("on");
+    });
+
+    
+
 });
