@@ -35,5 +35,12 @@ $(document).ready(function(){
     });
 
     
+    $(".contents .gon>ul>li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+
+    $(".btn").click(function(){
+        $(".modal").fadeOut();
+    });
 
 });
