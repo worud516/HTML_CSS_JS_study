@@ -22,4 +22,13 @@ $(document).ready(function(){
 
     },3000);
 
+
+    $(".wrap > .rightbox > .contents > .gongi > ul > li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+
+    $(".btn").click(function(){
+        $(".modal").fadeOut();
+    });
+
 });
