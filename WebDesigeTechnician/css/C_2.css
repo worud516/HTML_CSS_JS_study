@@ -117,3 +117,107 @@ body{
     display: block;
     width: 100%;
 }
+
+.wrap > .rightbox > .contents{
+    width: 100%;
+    height: 200px;
+}
+.wrap > .rightbox > .contents > .gongi{
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+.wrap > .rightbox > .contents > .gongi > h2{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    background-color: plum;
+    text-align: center;
+    border-radius: 0px 15px 0px 0px;
+}
+.wrap > .rightbox > .contents > .gongi > ul{
+    width: 100%;
+    height: 170px;
+}
+.wrap > .rightbox > .contents > .gongi > ul > li{
+    width: 100%;
+    height: 20%;
+    line-height: 34px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+.wrap > .rightbox > .contents > .gongi > ul > li:last-child{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+.wrap > .rightbox > .contents > .gongi > ul > li > a{
+    display: block;
+    width: 100%;
+}
+.wrap > .rightbox > .contents > .gongi > ul > li:hover > a{
+    background-color: #fad7f3;
+    font-weight: bold;
+}
+.wrap > .rightbox > .contents > .gongi > ul > li > a > span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+
+.wrap > .rightbox > .contents > .gal{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.wrap > .rightbox > .contents > .gal > h2{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    background-color: plum;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.wrap > .rightbox > .contents > .gal > ul{
+    width: 100%;
+    height: 170px;
+}
+.wrap > .rightbox > .contents > .gal > ul > li{
+    float: left;
+    margin-top: 42px;
+    margin-left: 6px;
+    width: 75px;
+    height: 75px;
+}
+.wrap > .rightbox > .contents > .gal > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.wrap > .rightbox > .contents > .gal > ul > li > a > img{
+    width: 100%;
+}
+
+
+.wrap > .rightbox > .contents > .baro{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.wrap > .rightbox > .contents > .baro > h2{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    background-color: plum;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.wrap > .rightbox > .contents > .baro > a{
+    display: block;
+    width: 100%;
+}
