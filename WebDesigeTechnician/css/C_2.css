@@ -30,6 +30,7 @@ body{
     width: 200px;
     height: 650px;
     background-color: #fad7f3;
+    float: left;
 }
 .wrap > .leftbox > h1{
     width: 100%;
@@ -94,4 +95,25 @@ body{
 .wrap > .leftbox > nav > ul > li > ul > li:hover > a{
     background-color: rgba(0, 0, 0, 0.3);
     color: #fad7f3;
+}
+
+.wrap > .rightbox{
+    width: 800px;
+    float: left;
+}
+.wrap > .rightbox > .slide{
+    width: 100%;
+    height: 350px;
+}
+.wrap > .rightbox > .slide > ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wrap > .rightbox > .slide > ul > li{
+    position: absolute;
+}
+.wrap > .rightbox > .slide > ul > li > a{
+    display: block;
+    width: 100%;
 }
