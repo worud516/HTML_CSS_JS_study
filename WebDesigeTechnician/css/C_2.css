@@ -165,9 +165,6 @@ body{
     font-size: 14px;
     margin-left: 10px;
 }
-
-
-
 .wrap > .rightbox > .contents > .gal{
     float: left;
     width: 250px;
@@ -201,8 +198,6 @@ body{
 .wrap > .rightbox > .contents > .gal > ul > li > a > img{
     width: 100%;
 }
-
-
 .wrap > .rightbox > .contents > .baro{
     float: left;
     width: 250px;
@@ -220,4 +215,46 @@ body{
 .wrap > .rightbox > .contents > .baro > a{
     display: block;
     width: 100%;
+}
+
+.wrap > .rightbox > footer{
+    width: 100%;
+    height: 100px;
+}
+
+.wrap > .rightbox > footer > .copyright{
+    float: left;
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+.wrap > .rightbox > footer > .sns{
+    float: left;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+.wrap > .rightbox > footer > .sns > ul{
+    width: 100%;
+    height: 100%;
+}
+.wrap > .rightbox > footer > .sns > ul > li{
+    float: left;
+    width: 33.3333%;
+    height: 100%;
+}
+.wrap > .rightbox > footer > .sns > ul > li > a{
+    line-height: 50px
+}
+.wrap > .rightbox > footer > .fam{
+    float: left;
+    width: 200px;
+    height: 50px;
+}
+.wrap > .rightbox > footer > .fam > .fams{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 25px;
 }
