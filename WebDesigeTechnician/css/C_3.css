@@ -84,6 +84,7 @@ img{
     top: -1px;
     left: 178px;
     border: 1px solid black;
+    z-index: 10;
     display: none;
 }
 .wrap > header > nav > ul > li > ul > li{
@@ -109,7 +110,6 @@ img{
 .wrap > .rightbox > .slideall{
     width: 100%;
     height: 350px;
-    
     overflow: hidden;
     position: relative;
 }
@@ -129,4 +129,173 @@ img{
     display: block;
     width: 100%;
     height: 100%;
+}
+
+
+.wrap > .rightbox > .contents{
+    width: 100%;
+    height: 200px;
+}
+
+.wrap > .rightbox > .contents > .gongi{
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+.wrap > .rightbox > .contents > .gongi > h2{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(192, 192, 192);
+    border-radius: 0 15px 0 0;
+}
+.wrap > .rightbox > .contents > .gongi > ul{
+    width: 100%;
+    height: 170px;
+    background-color: rgb(207, 252, 248);
+}
+.wrap > .rightbox > .contents > .gongi > ul > li{
+    width: 100%;
+    line-height: 34px;
+}
+.wrap > .rightbox > .contents > .gongi > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+.wrap > .rightbox > .contents > .gongi > ul > li:hover > a{
+    background-color: darkgrey;
+}
+.wrap > .rightbox > .contents > .gongi > ul > li > a > span{
+    margin-left: 60px;
+    font-size: 12px;
+}
+
+
+.wrap > .rightbox > .contents > .gal{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.wrap > .rightbox > .contents > .gal > h2{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(192, 192, 192);
+    border-radius: 0 15px 0 0;
+}
+.wrap > .rightbox > .contents > .gal > ul{
+    width: 100%;
+    height: 170px;
+    padding-top: 47.5px;
+    box-sizing: border-box;
+}
+.wrap > .rightbox > .contents > .gal > ul > li{
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-left: 5px;
+}
+.wrap > .rightbox > .contents > .gal > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.wrap > .rightbox > .contents > .gal > ul > li:hover > a{
+    opacity: 0.5;
+}
+.wrap > .rightbox > .contents > .gal > ul > li > a > img{
+    width: 100%;
+}
+
+
+.wrap > .rightbox > .contents > .baro{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.wrap > .rightbox > .contents > .baro > h3{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(192, 192, 192);
+    border-radius: 0 15px 0 0;
+}
+
+.wrap > .rightbox > footer{
+    width: 100%;
+    height: 100px;
+}
+.wrap > .rightbox > footer > .flogo{
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    height: 100%;
+}
+.wrap > .rightbox > footer > .flogo > a{
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+
+.wrap > .rightbox > footer > .fmenu{
+    float: left;
+    width: 600px;
+    height: 50px;
+}
+.wrap > .rightbox > footer > .fmenu > ul{
+    width: 400px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.wrap > .rightbox > footer > .fmenu > ul > li{
+    width: 33.3333%;
+    float: left;
+}
+.wrap > .rightbox > footer > .copyright{
+    text-align: center;
+    line-height: 50px;
+}
+
+.modal{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.modal > .modalin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-color: #ffffff;
+}
+.modal > .modalin > .title{
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal > .modalin > .btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 30px;
 }
