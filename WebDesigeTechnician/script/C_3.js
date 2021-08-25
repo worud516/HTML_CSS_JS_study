@@ -8,4 +8,18 @@ $(document).ready(function(){
     });
 
 
+    var num = 0;
+
+    setInterval(function(){
+        num++
+        if( num >= 3){
+            num = 0;
+        }
+        $(".wrap > .rightbox > .slideall > ul").css({
+            "left": (-800 * num) + "px"
+        });
+
+
+    },3000);
+
 });
