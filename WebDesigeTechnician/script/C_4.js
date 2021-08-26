@@ -17,6 +17,15 @@ $(document).ready(function(){
         });
     },3000);
 
-});
+
+    $(".wrap > .lightbox > .contents > .gon > ul > li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+    $(".btn").click(function(){
+        $(".modal").fadeOut();
+    });
+
+
+}); 
 
 
