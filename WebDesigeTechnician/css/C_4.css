@@ -98,3 +98,31 @@ img{
 .wrap > .leftbox > ul > li > ul > li:hover > a{
     background-color: skyblue;
 }
+
+.wrap > .lightbox{
+    float: left;
+    width: 800px;
+    height: 650px;
+    overflow: hidden;
+}
+.wrap > .lightbox > .slide{
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+.wrap > .lightbox > .slide > ul{
+    position: absolute;
+    width: 2400px;
+    height: 350px;
+    left: 0px;
+}
+.wrap > .lightbox > .slide  > ul > li{
+    float: left;
+    width: 800px;
+    height: 350px;
+}
+.wrap > .lightbox > .slide  > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
