@@ -21,3 +21,80 @@ body{
 img{
     vertical-align: top;
 }
+
+.wrap{
+    width: 1000px;
+}
+.wrap > .leftbox{
+    float: left;
+    width: 200px;
+    height: 650px;
+    background-color: cyan;
+}
+.wrap > .leftbox > h1{
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.wrap > .leftbox > h1 > a{
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+
+.wrap > .leftbox > ul{
+    width: 160px;
+    margin: 0 auto;
+    text-align: center;
+}
+.wrap > .leftbox > ul > li{
+    width: 100%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+}
+.wrap > .leftbox > ul > li:last-child{
+    border-bottom: 1px solid black;
+}
+.wrap > .leftbox > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.wrap > .leftbox > ul > li:hover > a{
+    background-color: skyblue;
+}
+.wrap > .leftbox > ul > li > ul{
+    position: absolute;
+    top: -1px;
+    left: 158px;
+    background-color: cyan;
+    display: none;
+}
+.wrap > .leftbox > ul > li > ul > li{
+    width: 160px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+.wrap > .leftbox > ul > li > ul > li:last-child{
+    border-bottom: 1px solid black;
+}
+.wrap > .leftbox > ul > li > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.wrap > .leftbox > ul > li > ul > li:hover > a{
+    background-color: skyblue;
+}
