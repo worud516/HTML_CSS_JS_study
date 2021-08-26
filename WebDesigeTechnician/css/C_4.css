@@ -209,3 +209,23 @@ img{
 .wrap > .lightbox > .contents > .gal > ul > li > a > img{
     width: 100%;
 }
+
+.wrap > .lightbox > .contents > .baro{
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+.wrap > .lightbox > .contents > .baro > h3{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: skyblue;
+    border-radius: 0 15px 0 0;
+}
+.wrap > .lightbox > .contents > .baro > a{
+    display: block;
+    width: 200px;
+    height: 170px;
+}
