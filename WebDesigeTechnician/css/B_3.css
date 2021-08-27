@@ -201,6 +201,9 @@ body{
     height: 120px;
     margin-left: 10px;
 }
+.wrap > .contents > .gal > ul > li:hover{
+    opacity: 0.5;
+}
 .wrap > .contents > .gal > ul > li > a{
     display: block;
     width: 100%;
@@ -221,4 +224,9 @@ body{
 }
 .wrap > .contents > .banner > h3{
     display: none;
+}
+.wrap > .contents > .banner > a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
