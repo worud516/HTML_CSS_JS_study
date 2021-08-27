@@ -22,3 +22,79 @@ body{
     color: #333333;
 }
 
+
+
+.tbar{
+    width: 100%;
+    height: 100px;
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4a4948;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap > header{
+    width: 100%;
+    height: 100px;
+}
+.wrap > header > h1{
+    float: left;
+    width: 200px;
+    height: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.wrap > header > h1 > a{
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+.wrap > header > ul{
+    float: left;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #d1d1d1;
+    margin-top: 50px;
+    margin-left: 380px;
+}
+.wrap > header > ul > li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.wrap > header > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.wrap > header > ul > li:hover > a{
+    background-color: rgb(83, 169, 191);
+}
+.wrap > header > ul > li > ul{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: none;
+}
+.wrap > header > ul > li > ul > li{
+    width: 100%;
+    font-size: 18px;
+}
+.wrap > header > ul > li > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.wrap > header > ul > li > ul > li:hover > a{
+    background-color: #4a4948;
+    color: white;
+}
