@@ -224,7 +224,6 @@ body{
     width: 100%;
 }
 
-
 .wrap > .content > .banner{
     float: left;
     width: 400px;
@@ -232,4 +231,62 @@ body{
 }
 .wrap > .content > .banner > h3{
     display: none;
+}
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(194, 194, 194);
+}
+footer > .lbox{
+    float: left;
+    width: 1000px;
+    height: 100%;
+}
+footer > .lbox > .fmenu{
+    float: left;
+    width: 1000px;
+    height: 50px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+footer > .lbox > .fmenu > ul{
+    width: 800px;
+    height: 50px;
+    text-align: center;
+}
+footer > .lbox > .fmenu > ul > li{
+    float: left;
+    width: 33.333%;
+    height: 100%;
+    line-height: 50px;
+}
+footer > .lbox > .copyright{
+    float: left;
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+footer > .famall{
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+
+footer > .famall > .fam{
+    width: 120px;
+    height: 30px;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.fbg{
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100px;
+    top: 600px;
+    background-color: rgb(194, 194, 194);
 }
