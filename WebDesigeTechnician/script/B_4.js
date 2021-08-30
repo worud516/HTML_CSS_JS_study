@@ -24,4 +24,13 @@ $(document).ready(function(){
 
     },3000);
 
+
+    $(".wrap > .content > .gon > ul > li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+    $(".btn").eq(0).click(function(){
+        $(".modal").fadeOut();
+    });
+
+
 });

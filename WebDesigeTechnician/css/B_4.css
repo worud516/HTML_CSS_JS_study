@@ -290,3 +290,43 @@ footer > .famall > .fam{
     top: 600px;
     background-color: rgb(194, 194, 194);
 }
+
+.modal{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.modal > .modalin{
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 600px;
+    height: 500px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal > .modalin > .title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.modal > .modalin > hr{
+    margin-bottom: 10px;
+}
+.modal > .modalin > span{
+    width: 100%;
+    height: 100%;
+}
+.modal > .modalin > .btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 30px;
+}
