@@ -109,3 +109,90 @@ body{
 .wrap > .rbox > ul.slide > li{
     position: absolute;
 }
+
+.wrap > .rbox > .content{
+    width: 100%;
+    height: 200px;
+}
+.wrap > .rbox > .content > .tab{
+    float: left;
+    width: 300px;
+    height: 100%;
+    position: relative;
+}
+.wrap > .rbox > .content > .tab > h2.gon{
+    width: 90px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(128, 203, 228);
+    border: 1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.wrap > .rbox > .content > .tab  > h2.gal{
+    position: absolute;
+    top: 0;
+    left: 90px;
+    width: 90px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.wrap > .rbox > .content > .tab  > ul.gonul{
+    width: 100%;
+    height: 170px;
+}
+.wrap > .rbox > .content > .tab  > ul.gonul.active{
+    display: none;
+}
+.wrap > .rbox > .content > .tab  > ul.gonul > li{
+    height: 20%;
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wrap > .rbox > .content > .tab  > ul.gonul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.wrap > .rbox > .content > .tab  > ul.gonul > li:hover > a{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.wrap > .rbox > .content > .tab  > ul.gonul > li > a > span{
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+.wrap > .rbox > .content > .tab  > ul.galul{
+    width: 100%;
+    height: 170px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+}
+.wrap > .rbox > .content > .tab  > ul.galul.active{
+    display: block;
+}
+.wrap > .rbox > .content > .tab  > ul.galul > li{
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin-left: 7px;
+}

@@ -22,4 +22,14 @@ $(document).ready(function(){
         $(".wrap > .rbox > ul.slide > li").eq(num).fadeIn(1000);
     },3000);
 
+
+    $(".wrap > .rbox > .content > .tab > h2.gon").click(function(){
+        $(".wrap > .rbox > .content > .tab  > ul.galul").removeClass("active");
+        $(".wrap > .rbox > .content > .tab  > ul.gonul").removeClass("active");
+    });
+    $(".wrap > .rbox > .content > .tab > h2.gal").click(function(){
+        $(".wrap > .rbox > .content > .tab  > ul.galul").addClass("active");
+        $(".wrap > .rbox > .content > .tab  > ul.gonul").addClass("active");
+    });
+
 });
