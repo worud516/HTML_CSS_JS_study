@@ -262,3 +262,35 @@ body{
     text-align: center;
     line-height: 50px;
 }
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);    
+    z-index: 100;
+    display: none;
+}
+.modal > .modalin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 500px;
+    background-color: #ffffff;
+}
+.modal > .modalin > .title{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.modal > .modalin > .btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 30px;
+}

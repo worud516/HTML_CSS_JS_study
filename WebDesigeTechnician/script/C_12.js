@@ -32,4 +32,12 @@ $(document).ready(function(){
         $(".wrap > .rbox > .content > .tab  > ul.gonul").addClass("active");
     });
 
+
+    $(".wrap > .rbox > .content > .tab  > ul.gonul > li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+    $(".btn").click(function(){
+        $(".modal").fadeOut();
+    });
+
 });
