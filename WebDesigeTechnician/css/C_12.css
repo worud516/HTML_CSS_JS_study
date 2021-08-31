@@ -205,3 +205,22 @@ body{
 .wrap > .rbox > .content > .banner > h2{
     display: none;
 }
+
+.wrap > .rbox > .content > .baro{
+    float: left;
+    width: 250px;
+    height: 100%;
+    position: relative;
+}
+.wrap > .rbox > .content > .baro > h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
