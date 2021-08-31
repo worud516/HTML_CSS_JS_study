@@ -142,7 +142,7 @@ body{
     font-weight: bold;
     text-align: center;
     line-height: 30px;
-    background-color: white;
+    background-color: rgb(128, 203, 228);
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
@@ -195,4 +195,13 @@ body{
     width: 90px;
     height: 90px;
     margin-left: 7px;
+}
+
+.wrap > .rbox > .content > .banner{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.wrap > .rbox > .content > .banner > h2{
+    display: none;
 }
