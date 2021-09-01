@@ -13,7 +13,16 @@ $(document).ready(function(){
     $(".wrap > .rbox > ul.slide > li").eq(0).siblings().fadeOut(0);
     $(".wrap > .rbox > ul.slide > li").eq(0).fadeIn(0);
 
-    setInterval(function(){
+    // setInterval(function(){
+    //     num++;
+    //     if( num >= 3){
+    //         num = 0;
+    //     }
+    //     $(".wrap > .rbox > ul.slide > li").eq(num).siblings().fadeOut(1000);
+    //     $(".wrap > .rbox > ul.slide > li").eq(num).fadeIn(1000);
+    // },3000);
+
+    setInterval(() => {
         num++;
         if( num >= 3){
             num = 0;
