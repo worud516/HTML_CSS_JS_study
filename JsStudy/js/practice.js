@@ -1,21 +1,22 @@
 console.clear();
-var x = 1;
-var y = 1;
 
-var dan = 2;
-var z = 3;
+var i = 2;
+var j = 0;
 
 
-console.log(dan + "단")
-var i = 0;
-for(i=1; i<10; i++){
-    console.log(dan + " X " + i + " = " + dan * i)
+
+for(i=2; i<10; i++){
+    console.log(i + "단" + "<br>")
+    for(j=1; j<10; j++){
+        console.log(i + " X " + j + " = " + i * j + "<br>")
+    }
 }
 
-
-document.write(dan + "단" + "<br>")
-for(i=1; i<10; i++){
-    document.write(dan + " X " + i + " = " + dan * i + "<br>")
+for(i=2; i<10; i++){
+    document.write(i + "단" + "<br>")
+    for(j=1; j<10; j++){
+        document.write(i + " X " + j + " = " + i * j + "<br>")
+    }
 }
 
 
