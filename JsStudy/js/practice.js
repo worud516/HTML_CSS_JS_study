@@ -3,12 +3,10 @@ console.clear();
 var i = 2;
 var j = 0;
 
-
-
 for(i=2; i<10; i++){
-    console.log(i + "단" + "<br>")
+    console.log(i + "단")
     for(j=1; j<10; j++){
-        console.log(i + " X " + j + " = " + i * j + "<br>")
+        console.log(i + " X " + j + " = " + i * j)
     }
 }
 
